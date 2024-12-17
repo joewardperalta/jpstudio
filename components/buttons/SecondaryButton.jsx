@@ -1,9 +1,8 @@
-import Button from "./Button";
 import Image from "next/image";
 
 export default function SecondaryButton({ children }) {
   return (
-    <Button>
+    <button className="text-medium w-fit font-medium">
       <div className="flex gap-x-4 items-center">
         {children}
         <Image
@@ -13,6 +12,6 @@ export default function SecondaryButton({ children }) {
           alt="arrow right long icon"
         />
       </div>
-    </Button>
+    </button>
   );
 }
