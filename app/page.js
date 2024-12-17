@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Title from "@/components/Title";
-import Wrapper from "@/components/wrapper";
+import Wrapper from "@/components/Wrapper";
 import PrimaryButton from "@/components/buttons/PrimaryButton";
 import SectionHeading from "@/components/SectionHeading";
 import SecondaryButton from "@/components/buttons/SecondaryButton";
