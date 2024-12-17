@@ -29,6 +29,7 @@ export default function Home() {
               width={3840}
               height={2160}
               alt="hero image of a sofa for a furniture E-commerce website"
+              priority
             />
           </div>
         </Wrapper>
