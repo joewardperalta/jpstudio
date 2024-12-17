@@ -33,6 +33,12 @@ export default {
             lineHeight: "1.2",
           },
         ],
+        sectionHeading: [
+          "2.5rem",
+          {
+            lineHeight: "1.2",
+          },
+        ],
         base: [
           "1.125rem",
           {
@@ -50,6 +56,10 @@ export default {
       borderRadius: {
         "4xl": "1.75rem",
         "5xl": "2rem",
+      },
+
+      gap: {
+        50: "12.5rem",
       },
     },
   },

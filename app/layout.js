@@ -1,5 +1,6 @@
 import { Raleway } from "next/font/google";
 import "./globals.css";
+import Script from "next/script";
 
 const raleway = Raleway({
   subsets: ["latin"],
@@ -13,7 +14,11 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={raleway.className}>{children}</body>
+      <body className={raleway.className}>
+        {children}
+
+        <Script src="https://kit.fontawesome.com/d924478ec2.js" />
+      </body>
     </html>
   );
 }
