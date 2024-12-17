@@ -20,6 +20,37 @@ export default {
         midGray: "#B6B6B6",
         lightGray: "#DBDBDB",
       },
+
+      padding: {
+        17: "4.5rem",
+        30: "7.5rem",
+      },
+
+      fontSize: {
+        title: [
+          "3.5rem",
+          {
+            lineHeight: "1.2",
+          },
+        ],
+        base: [
+          "1.125rem",
+          {
+            lineHeight: "1.7",
+          },
+        ],
+        medium: [
+          "1.25rem",
+          {
+            lineHeight: "1.7",
+          },
+        ],
+      },
+
+      borderRadius: {
+        "4xl": "1.75rem",
+        "5xl": "2rem",
+      },
     },
   },
   plugins: [],
