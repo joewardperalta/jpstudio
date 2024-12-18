@@ -8,8 +8,6 @@ export default {
   theme: {
     extend: {
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
         primary: "#0E65D9",
         lightBlue: "#7CB5FF",
         lightPurple: "#C6B4FF",
@@ -35,6 +33,12 @@ export default {
         ],
         sectionHeading: [
           "2.5rem",
+          {
+            lineHeight: "1.2",
+          },
+        ],
+        subHeading: [
+          "1.6rem",
           {
             lineHeight: "1.2",
           },

@@ -5,6 +5,7 @@ import PrimaryButton from "@/components/buttons/PrimaryButton";
 import SectionHeading from "@/components/SectionHeading";
 import SecondaryButton from "@/components/buttons/SecondaryButton";
 import Video from "@/components/Video";
+import ProjectCard from "@/components/ProjectCard";
 
 export default function Home() {
   return (
@@ -42,7 +43,7 @@ export default function Home() {
             {/* Description */}
             <div className="max-w-[34.25rem]">
               <SectionHeading>Custom Web Design & Development</SectionHeading>
-              <p className="text-base mb-10">
+              <p className="text-base mb-10 text-gray">
                 Our website design and development service builds a clean,
                 easy-to-use website that highlights your business and attracts
                 customers. With a simple design and smooth functionality, your
@@ -73,7 +74,7 @@ export default function Home() {
             {/* Description */}
             <div className="max-w-[34.25rem]">
               <SectionHeading>Hosting & Domain Setup</SectionHeading>
-              <p className="text-base mb-10">
+              <p className="text-base mb-10 text-gray">
                 Our domain setup service ensures your business gets a
                 professional, secure, and easy-to-find online address without
                 the hassle of managing technical details. A well-chosen domain
@@ -105,7 +106,7 @@ export default function Home() {
             <div className="max-w-[34.25rem]">
               {/* Description */}
               <SectionHeading>SEO Optimization</SectionHeading>
-              <p className="text-base mb-10">
+              <p className="text-base mb-10 text-gray">
                 Our SEO optimization service helps your business rank higher on
                 search engines, making it easier for customers to find you
                 online. By driving more traffic to your website, you&apos;ll
@@ -136,7 +137,7 @@ export default function Home() {
             {/* Description */}
             <div className="max-w-[34.25rem]">
               <SectionHeading>Analytics Integration</SectionHeading>
-              <p className="text-base mb-10">
+              <p className="text-base mb-10 text-gray">
                 Our analytics integration service helps you understand how
                 customers interact with your website so you can make smarter
                 decisions for your business. By tracking what works and what
@@ -166,7 +167,7 @@ export default function Home() {
             {/* Description */}
             <div className="max-w-[34.25rem]">
               <SectionHeading>E-commerce Functionality</SectionHeading>
-              <p className="text-base mb-10">
+              <p className="text-base mb-10 text-gray">
                 Our e-commerce integration service helps you set up an online
                 store where customers can easily browse and buy your products.
                 It allows you to reach more customers, sell anytime, and grow
@@ -194,7 +195,7 @@ export default function Home() {
             {/* Description */}
             <div className="max-w-[34.25rem]">
               <SectionHeading>Maintenance Support</SectionHeading>
-              <p className="text-base mb-10">
+              <p className="text-base mb-10 text-gray">
                 Our maintenance service keeps your website running smoothly and
                 up to date, so you don’t have to worry about technical issues.
                 It ensures your site stays secure, works properly, and continues
@@ -211,6 +212,35 @@ export default function Home() {
             <div>
               <Video src="/videos/web-design-figma.mp4" />
             </div>
+          </div>
+        </Wrapper>
+      </section>
+
+      {/* Projects Section */}
+      <section id="projects-section">
+        <Wrapper>
+          <div>
+            <Title>Featured Projects</Title>
+          </div>
+
+          {/* Project list */}
+          <div className="flex gap-11">
+            <ProjectCard
+              img={{
+                src: "/images/inside-out-window-coverings-mockup.jpg",
+                alt: "Inside out window coverings mockup website, featuring homepage hero setion.",
+              }}
+              title="Insideout Window Coverings"
+              tagline="Modern & elegant brochure website"
+            />
+            <ProjectCard
+              img={{
+                src: "/images/matt-wojtas--baMCm2CLKM-unsplash.jpg",
+                alt: "Inside out window coverings mockup website, featuring homepage hero setion.",
+              }}
+              title="Apostolic Sanctuary of Canada"
+              tagline="Family-friendly church website"
+            />
           </div>
         </Wrapper>
       </section>
