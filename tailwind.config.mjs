@@ -26,7 +26,7 @@ export default {
 
       fontSize: {
         title: [
-          "3.5rem",
+          "5rem",
           {
             lineHeight: "1.2",
           },
@@ -65,6 +65,12 @@ export default {
       gap: {
         50: "12.5rem",
       },
+
+      screens: {
+        "desktop": "1440px",
+        "tablet": "834px",
+        "mobile": "375px"
+      }
     },
   },
   plugins: [],
