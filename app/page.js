@@ -13,15 +13,17 @@ export default function Home() {
       {/* Hero Section */}
       <section className="bg-black" id="hero-section">
         <Wrapper>
-          <div className="max-w-[73.5rem] mx-auto flex flex-col items-center my-20">
+          <div className="desktop:w-[81rem] desktop:mx-auto desktop:my-[4.875rem]">
             <Title className="text-center text-white">
               We build modern and professional website for your business
             </Title>
 
             {/* CTA button */}
-            <PrimaryButton className="bg-primary text-white">
-              Get Started
-            </PrimaryButton>
+            <div className="w-fit mx-auto">
+              <PrimaryButton className="bg-primary text-white">
+                Get Started
+              </PrimaryButton>
+            </div>
           </div>
           <div>
             <Image
