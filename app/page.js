@@ -41,7 +41,7 @@ export default function Home() {
       {/* Custom Web Design & Development Section */}
       <section id="custom-web-design-and-development-section">
         <Wrapper>
-          <div className="flex gap-50 items-center">
+          <div className="flex gap-50 items-center justify-between">
             {/* Description */}
             <div className="max-w-[34.25rem]">
               <SectionHeading>Custom Web Design & Development</SectionHeading>
@@ -61,9 +61,9 @@ export default function Home() {
               </div>
             </div>
 
-            {/* Video showing the process for designing a website */}
-            <div>
-              <Video src="/videos/web-design-figma.mp4" />
+            {/* Service Image */}
+            <div className="h-[700px] rounded-[2rem] overflow-hidden">
+              <Image className="object-cover h-full w-full" src="/images/Custom Web Design.png" width={1809} height={1400} alt="Hero image of a window coverings shop website" />
             </div>
           </div>
         </Wrapper>
@@ -72,7 +72,7 @@ export default function Home() {
       {/* Hosting & Domain Setup Section */}
       <section className="bg-lightBlue" id="hosting-and-domain-setup-section">
         <Wrapper>
-          <div className="flex gap-50 items-center">
+          <div className="flex gap-50 items-center justify-between">
             {/* Description */}
             <div className="max-w-[34.25rem]">
               <SectionHeading>Hosting & Domain Setup</SectionHeading>
@@ -93,9 +93,9 @@ export default function Home() {
               </div>
             </div>
 
-            {/* Video showing the process for domain setup */}
-            <div>
-              <Video src="/videos/web-design-figma.mp4" />
+            {/* Service Image */}
+            <div className="h-[700px] rounded-[2rem] overflow-hidden">
+              <Image className="object-cover h-full w-full" src="/images/Hosting & Domain Setup.png" width={1809} height={1400} alt="Hosting & Domain" />
             </div>
           </div>
         </Wrapper>
@@ -104,7 +104,7 @@ export default function Home() {
       {/* SEO Optimization Section */}
       <section id="seo-optimization-section">
         <Wrapper>
-          <div className="flex gap-50 items-center">
+          <div className="flex gap-50 items-center justify-between">
             <div className="max-w-[34.25rem]">
               {/* Description */}
               <SectionHeading>SEO Optimization</SectionHeading>
@@ -125,8 +125,9 @@ export default function Home() {
               </div>
             </div>
 
-            <div>
-              <Video src="/videos/web-design-figma.mp4" />
+            {/* Service Image */}
+            <div className="h-[700px] rounded-[2rem] overflow-hidden">
+              <Image className="object-cover h-full w-full" src="/images/SEO Optimization.png" width={1809} height={1400} alt="SEO Optimization" />
             </div>
           </div>
         </Wrapper>
@@ -135,7 +136,7 @@ export default function Home() {
       {/* Analytics Integration Section */}
       <section className="bg-lightPurple" id="analytics-integration-section">
         <Wrapper>
-          <div className="flex gap-50 items-center">
+          <div className="flex gap-50 items-center justify-between">
             {/* Description */}
             <div className="max-w-[34.25rem]">
               <SectionHeading>Analytics Integration</SectionHeading>
@@ -154,9 +155,9 @@ export default function Home() {
               </div>
             </div>
 
-            {/* Service Process Video */}
-            <div>
-              <Video src="/videos/web-design-figma.mp4" />
+            {/* Service Image */}
+            <div className="h-[700px] rounded-[2rem] overflow-hidden">
+              <Image className="object-cover h-full w-full" src="/images/Google Analytics.png" width={1809} height={1400} alt="Google Analytics" />
             </div>
           </div>
         </Wrapper>
@@ -165,7 +166,7 @@ export default function Home() {
       {/* E-commerce Functionality Section */}
       <section id="ecommerce-functionality-section">
         <Wrapper>
-          <div className="flex gap-50 items-center">
+          <div className="flex gap-50 items-center justify-between">
             {/* Description */}
             <div className="max-w-[34.25rem]">
               <SectionHeading>E-commerce Functionality</SectionHeading>
@@ -183,8 +184,9 @@ export default function Home() {
               </div>
             </div>
 
-            <div>
-              <Video src="/videos/web-design-figma.mp4" />
+            {/* Service Image */}
+            <div className="h-[700px] rounded-[2rem] overflow-hidden">
+              <Image className="object-cover h-full w-full" src="/images/Ecommerce.png" width={1809} height={1400} alt="Ecommerce Product" />
             </div>
           </div>
         </Wrapper>
@@ -193,7 +195,7 @@ export default function Home() {
       {/* Maintenance Support Section */}
       <section className="bg-lightYellow" id="maintenance-support-section">
         <Wrapper>
-          <div className="flex gap-50 items-center">
+          <div className="flex gap-50 items-center justify-between">
             {/* Description */}
             <div className="max-w-[34.25rem]">
               <SectionHeading>Maintenance Support</SectionHeading>
@@ -211,8 +213,9 @@ export default function Home() {
               </div>
             </div>
 
-            <div>
-              <Video src="/videos/web-design-figma.mp4" />
+            {/* Service Image */}
+            <div className="h-[700px] rounded-[2rem] overflow-hidden">
+              <Image className="object-cover h-full w-full" src="/images/Maintenance Support.png" width={1809} height={1400} alt="Maintenance" />
             </div>
           </div>
         </Wrapper>
