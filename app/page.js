@@ -5,9 +5,11 @@ import PrimaryButton from "@/components/buttons/PrimaryButton";
 import SectionHeading from "@/components/SectionHeading";
 import SecondaryButton from "@/components/buttons/SecondaryButton";
 import ProjectCard from "@/components/ProjectCard";
+import TestimonialCard from "@/components/TestimonialCard";
 
 // JSON Data
 import projects from "@/data/projects.json";
+import testimonials from "@/data/testimonials.json";
 
 export default function Home() {
   return (
@@ -46,7 +48,9 @@ export default function Home() {
           <div className="flex gap-50 items-center justify-between">
             {/* Description */}
             <div className="max-w-[34.25rem]">
-              <SectionHeading>Custom Web Design & Development</SectionHeading>
+              <SectionHeading className="mb-8">
+                Custom Web Design & Development
+              </SectionHeading>
               <p className="text-base mb-10 text-gray">
                 Our website design and development service builds a clean,
                 easy-to-use website that highlights your business and attracts
@@ -83,7 +87,9 @@ export default function Home() {
           <div className="flex gap-50 items-center justify-between">
             {/* Description */}
             <div className="max-w-[34.25rem]">
-              <SectionHeading>Hosting & Domain Setup</SectionHeading>
+              <SectionHeading className="mb-8">
+                Hosting & Domain Setup
+              </SectionHeading>
               <p className="text-base mb-10 text-gray">
                 Our domain setup service ensures your business gets a
                 professional, secure, and easy-to-find online address without
@@ -121,7 +127,7 @@ export default function Home() {
           <div className="flex gap-50 items-center justify-between">
             <div className="max-w-[34.25rem]">
               {/* Description */}
-              <SectionHeading>SEO Optimization</SectionHeading>
+              <SectionHeading className="mb-8">SEO Optimization</SectionHeading>
               <p className="text-base mb-10 text-gray">
                 Our SEO optimization service helps your business rank higher on
                 search engines, making it easier for customers to find you
@@ -159,7 +165,9 @@ export default function Home() {
           <div className="flex gap-50 items-center justify-between">
             {/* Description */}
             <div className="max-w-[34.25rem]">
-              <SectionHeading>Analytics Integration</SectionHeading>
+              <SectionHeading className="mb-8">
+                Analytics Integration
+              </SectionHeading>
               <p className="text-base mb-10 text-gray">
                 Our analytics integration service helps you understand how
                 customers interact with your website so you can make smarter
@@ -195,7 +203,9 @@ export default function Home() {
           <div className="flex gap-50 items-center justify-between">
             {/* Description */}
             <div className="max-w-[34.25rem]">
-              <SectionHeading>E-commerce Functionality</SectionHeading>
+              <SectionHeading className="mb-8">
+                E-commerce Functionality
+              </SectionHeading>
               <p className="text-base mb-10 text-gray">
                 Our e-commerce integration service helps you set up an online
                 store where customers can easily browse and buy your products.
@@ -230,7 +240,9 @@ export default function Home() {
           <div className="flex gap-50 items-center justify-between">
             {/* Description */}
             <div className="max-w-[34.25rem]">
-              <SectionHeading>Maintenance Support</SectionHeading>
+              <SectionHeading className="mb-8">
+                Maintenance Support
+              </SectionHeading>
               <p className="text-base mb-10 text-gray">
                 Our maintenance service keeps your website running smoothly and
                 up to date, so you don’t have to worry about technical issues.
@@ -263,7 +275,7 @@ export default function Home() {
       <section id="projects-section">
         <Wrapper>
           <div>
-            <Title>Featured Projects</Title>
+            <SectionHeading>Featured Projects</SectionHeading>
           </div>
 
           {/* Project list */}
@@ -279,6 +291,28 @@ export default function Home() {
                 brief={project.brief}
               />
             ))}
+          </div>
+        </Wrapper>
+      </section>
+
+      <section id="testimonial section">
+        <Wrapper>
+          <div>
+            <SectionHeading className="text-center">
+              What People Are Saying
+            </SectionHeading>
+
+            {/* Testimonials */}
+            <div className="flex gap-11 justify-center">
+              {testimonials.map((testimonial) => (
+                <TestimonialCard
+                  key={testimonial.id}
+                  author={testimonial.author}
+                  avatar={testimonial.avatar}
+                  message={testimonial.message}
+                />
+              ))}
+            </div>
           </div>
         </Wrapper>
       </section>

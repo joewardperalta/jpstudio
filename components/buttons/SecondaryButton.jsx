@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function SecondaryButton({ children }) {
   return (
-    <button className="text-medium w-fit font-medium">
+    <button className="text-[1rem] w-fit font-medium">
       <div className="flex gap-x-4 items-center">
         {children}
         <Image

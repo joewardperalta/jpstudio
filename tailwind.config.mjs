@@ -32,7 +32,7 @@ export default {
           },
         ],
         sectionHeading: [
-          "2.5rem",
+          "3.5rem",
           {
             lineHeight: "1.2",
           },
@@ -67,10 +67,10 @@ export default {
       },
 
       screens: {
-        "desktop": "1440px",
-        "tablet": "834px",
-        "mobile": "375px"
-      }
+        desktop: "1440px",
+        tablet: "834px",
+        mobile: "375px",
+      },
     },
   },
   plugins: [],
