@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-export default function ProjectCard({ img, title, tagline }) {
+export default function ProjectCard({ img, name, brief }) {
   return (
     <div>
       {/* Project mockup image */}
@@ -16,8 +16,8 @@ export default function ProjectCard({ img, title, tagline }) {
 
       {/* Project description */}
       <div className="space-y-2">
-        <h3 className="text-subHeading">{title}</h3>
-        <p className="text-base text-gray">{tagline}</p>
+        <h3 className="text-subHeading">{name}</h3>
+        <p className="text-base text-gray">{brief}</p>
       </div>
     </div>
   );

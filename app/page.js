@@ -4,8 +4,10 @@ import Wrapper from "@/components/Wrapper";
 import PrimaryButton from "@/components/buttons/PrimaryButton";
 import SectionHeading from "@/components/SectionHeading";
 import SecondaryButton from "@/components/buttons/SecondaryButton";
-import Video from "@/components/Video";
 import ProjectCard from "@/components/ProjectCard";
+
+// JSON Data
+import projects from "@/data/projects.json";
 
 export default function Home() {
   return (
@@ -266,22 +268,17 @@ export default function Home() {
 
           {/* Project list */}
           <div className="flex gap-20">
-            <ProjectCard
-              img={{
-                src: "/images/inside-out-window-coverings-mockup.jpg",
-                alt: "Inside out window coverings mockup website, featuring homepage hero setion.",
-              }}
-              title="Insideout Window Coverings"
-              tagline="Modern & elegant brochure website"
-            />
-            <ProjectCard
-              img={{
-                src: "/images/matt-wojtas--baMCm2CLKM-unsplash.jpg",
-                alt: "Inside out window coverings mockup website, featuring homepage hero setion.",
-              }}
-              title="Apostolic Sanctuary of Canada"
-              tagline="Family-friendly church website"
-            />
+            {projects.map((project) => (
+              <ProjectCard
+                key={project.id}
+                img={{
+                  src: project.coverImg.src,
+                  alt: project.coverImg.alt,
+                }}
+                name={project.name}
+                brief={project.brief}
+              />
+            ))}
           </div>
         </Wrapper>
       </section>

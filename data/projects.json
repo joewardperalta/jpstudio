@@ -1,0 +1,24 @@
+[
+  {
+    "id": 1,
+    "name": "Insideout Window Coverings",
+    "brief": "Modern & elegant brochure website",
+    "siteUrl": "https://www.insideoutwindowcoverings.ca/",
+    "coverImg": {
+      "src": "/images/Insideout Window Coverings.jpg",
+      "alt": "Insideout window coverings hero image"
+    },
+    "isFeatured": 1
+  },
+  {
+    "id": 2,
+    "name": "Apostolic Sanctuary of Canada",
+    "brief": "Family-friendly church website",
+    "siteUrl": "https://www.apostolicsanctuarycanada.ca/",
+    "coverImg": {
+      "src": "/images/The Apostolic Sanctuary of canada.jpg",
+      "alt": "The Apostolic Sanctuary of Canada hero and ministries and services image"
+    },
+    "isFeatured": 1
+  }
+]
