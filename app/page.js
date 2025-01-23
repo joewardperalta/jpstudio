@@ -63,7 +63,13 @@ export default function Home() {
 
             {/* Service Image */}
             <div className="h-[700px] rounded-[2rem] overflow-hidden">
-              <Image className="object-cover h-full w-full" src="/images/Custom Web Design.png" width={1809} height={1400} alt="Hero image of a window coverings shop website" />
+              <Image
+                className="object-cover h-full w-full"
+                src="/images/Custom Web Design.png"
+                width={1809}
+                height={1400}
+                alt="Hero image of a window coverings shop website"
+              />
             </div>
           </div>
         </Wrapper>
@@ -95,7 +101,13 @@ export default function Home() {
 
             {/* Service Image */}
             <div className="h-[700px] rounded-[2rem] overflow-hidden">
-              <Image className="object-cover h-full w-full" src="/images/Hosting & Domain Setup.png" width={1809} height={1400} alt="Hosting & Domain" />
+              <Image
+                className="object-cover h-full w-full"
+                src="/images/Hosting & Domain Setup.png"
+                width={1809}
+                height={1400}
+                alt="Hosting & Domain"
+              />
             </div>
           </div>
         </Wrapper>
@@ -127,7 +139,13 @@ export default function Home() {
 
             {/* Service Image */}
             <div className="h-[700px] rounded-[2rem] overflow-hidden">
-              <Image className="object-cover h-full w-full" src="/images/SEO Optimization.png" width={1809} height={1400} alt="SEO Optimization" />
+              <Image
+                className="object-cover h-full w-full"
+                src="/images/SEO Optimization.png"
+                width={1809}
+                height={1400}
+                alt="SEO Optimization"
+              />
             </div>
           </div>
         </Wrapper>
@@ -157,7 +175,13 @@ export default function Home() {
 
             {/* Service Image */}
             <div className="h-[700px] rounded-[2rem] overflow-hidden">
-              <Image className="object-cover h-full w-full" src="/images/Google Analytics.png" width={1809} height={1400} alt="Google Analytics" />
+              <Image
+                className="object-cover h-full w-full"
+                src="/images/Google Analytics.png"
+                width={1809}
+                height={1400}
+                alt="Google Analytics"
+              />
             </div>
           </div>
         </Wrapper>
@@ -186,7 +210,13 @@ export default function Home() {
 
             {/* Service Image */}
             <div className="h-[700px] rounded-[2rem] overflow-hidden">
-              <Image className="object-cover h-full w-full" src="/images/Ecommerce.png" width={1809} height={1400} alt="Ecommerce Product" />
+              <Image
+                className="object-cover h-full w-full"
+                src="/images/Ecommerce.png"
+                width={1809}
+                height={1400}
+                alt="Ecommerce Product"
+              />
             </div>
           </div>
         </Wrapper>
@@ -215,7 +245,13 @@ export default function Home() {
 
             {/* Service Image */}
             <div className="h-[700px] rounded-[2rem] overflow-hidden">
-              <Image className="object-cover h-full w-full" src="/images/Maintenance Support.png" width={1809} height={1400} alt="Maintenance" />
+              <Image
+                className="object-cover h-full w-full"
+                src="/images/Maintenance Support.png"
+                width={1809}
+                height={1400}
+                alt="Maintenance"
+              />
             </div>
           </div>
         </Wrapper>
@@ -229,7 +265,7 @@ export default function Home() {
           </div>
 
           {/* Project list */}
-          <div className="flex gap-11">
+          <div className="flex gap-20">
             <ProjectCard
               img={{
                 src: "/images/inside-out-window-coverings-mockup.jpg",
