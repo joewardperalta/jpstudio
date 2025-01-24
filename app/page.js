@@ -8,11 +8,13 @@ import ProjectCard from "@/components/ProjectCard";
 import TestimonialCard from "@/components/TestimonialCard";
 import ProcessCard from "@/components/ProcessCard";
 import Link from "next/link";
+import QuestionAndAnswerCard from "@/components/QuestionAndAnswerCard";
 
 // JSON Data
 import projects from "@/data/projects.json";
 import testimonials from "@/data/testimonials.json";
 import processes from "@/data/processes.json";
+import faqs from "@/data/faqs.json";
 
 export default function Home() {
   return (
@@ -373,6 +375,7 @@ export default function Home() {
         </div>
       </section>
 
+      {/* CTA Section */}
       <section className="bg-lightPurple">
         <Wrapper>
           <div className="mx-auto max-w-[67.25rem]">
@@ -391,6 +394,26 @@ export default function Home() {
                 <SecondaryButton>Contact us</SecondaryButton>
               </Link>
             </div>
+          </div>
+        </Wrapper>
+      </section>
+
+      {/* Frequently asked questions */}
+      <section id="FAQ">
+        <Wrapper>
+          <SectionHeading className="text-center">
+            Frequently asked questions
+          </SectionHeading>
+
+          {/* List of questions */}
+          <div className="mx-auto max-w-[75rem]">
+            {faqs.map((faq) => (
+              <QuestionAndAnswerCard
+                key={faq.id}
+                question={faq.question}
+                answer={faq.answer}
+              />
+            ))}
           </div>
         </Wrapper>
       </section>

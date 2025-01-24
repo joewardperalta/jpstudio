@@ -1,0 +1,62 @@
+[
+  {
+    "id": 0,
+    "question": "What services do you offer besides web design?",
+    "answer": "Along with web design, we offer a full range of services to create a seamless online presence, including web development, SEO optimization, analytics integration, hosting and domain setup, e-commerce features, and ongoing maintenance support."
+  },
+  {
+    "id": 1,
+    "question": "How long does it take to design and launch a website?",
+    "answer": "Designing and launching a website typically takes 1-3 months, depending on how many pages and features your website need."
+  },
+  {
+    "id": 2,
+    "question": "Will my website be mobile-friendly and responsive?",
+    "answer": "Yes, your website will be fully mobile-friendly and responsive."
+  },
+  {
+    "id": 3,
+    "question": "Do you provide custom designs or use templates?",
+    "answer": "We provide custom designs tailored to your business brand, identity, and goals."
+  },
+  {
+    "id": 4,
+    "question": "Can you help with website maintenance and updates after launch?",
+    "answer": "Yes, we offer a subscription based maintenance support that is paid monthly for only $20/month."
+  },
+  {
+    "id": 5,
+    "question": "Do you offer SEO services as part of your web design?",
+    "answer": "Absolutely, our web services come with built-in basic on-page SEO to help your website rank higher on Google. We take care of everything, from keyword research and meta tags to optimizing content, images, and load speed. We also structure your URLs, improve internal linking, and ensure proper indexing, giving your site the best chance to succeed online."
+  },
+  {
+    "id": 6,
+    "question": "What platforms or technologies do you use to build websites?",
+    "answer": "We create fully customizable websites built from the ground up using code, not website builders like Wordpress or Wix. Our tech stack includes HTML, CSS, React.js, Next.js, Tailwind CSS, and MongoDB, giving you a unique and high-performing website tailored to your needs."
+  },
+  {
+    "id": 7,
+    "question": "How involved will I need to be in the design process?",
+    "answer": "We will work closely with you to make sure the design reflects your vision. Your role will mainly involve reviewing drafts and approving key stages. Don't worry, our team takes care of the technical side, so you can focus on guiding the creative direction."
+  },
+  {
+    "id": 8,
+    "question": "What happens if I want changes after the site is complete?",
+    "answer": "We offer subscription based maintenance for $20/month that includes changes after the site is complete and you don't need to pay any extra."
+  },
+  {
+    "id": 9,
+    "question": "Will my website be secure and protect any data?",
+    "answer": "Yes, we prioritize the security of your website and user data. From SSL certificates to secure coding awnd regular updates. We will ensure your site is protected from any malicious users."
+  },
+  {
+    "id": 10,
+    "question": "Are there any ongoing fees after the website is built?",
+    "answer": "You will have to subscribe for maintenance support to ensure that your website stays online 24/7. The cost of ongoing maintenance support is $20/month."
+  },
+  {
+    "id": 11,
+    "question": "What makes your agency different from other web design companies?",
+    "answer": "What sets us apart is our focus on creating high-quality, professional, clean, and user-friendly websites that make the navigation seamless for your visitors. We go the extra mile to design unique websites tailored specifically to your brand, identity, and business goals, ensuring they stand out and leave a lasting impression."
+  }
+]
