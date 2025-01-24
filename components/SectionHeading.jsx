@@ -1,5 +1,7 @@
 export default function SectionHeading({ children, className = "" }) {
   return (
-    <h2 className={`text-sectionHeading mb-16 ${className}`}>{children}</h2>
+    <h2 className={`mb-[4.5rem] text-sectionHeading ${className}`}>
+      {children}
+    </h2>
   );
 }
