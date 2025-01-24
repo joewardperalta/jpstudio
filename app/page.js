@@ -363,7 +363,7 @@ export default function Home() {
         </SectionHeading>
 
         {/* List of the process for building a website */}
-        <div className="flex gap-11 overflow-x-auto px-14 pb-4 pl-17">
+        <div className="flex gap-11 overflow-x-auto px-17 pb-11">
           {processes.map((process) => (
             <ProcessCard
               key={process.id}

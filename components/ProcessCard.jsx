@@ -6,11 +6,11 @@ export default function ProcessCard({ img, title, description }) {
       {/* Cover image */}
       <div className="mb-4 overflow-hidden rounded-4xl">
         <Image
-          className="object-cover"
+          className="h-[38.9375rem] w-full object-cover"
           src={img.src}
           alt={img.alt}
-          width={636}
-          height={623}
+          width={2000}
+          height={2000}
         />
       </div>
 
