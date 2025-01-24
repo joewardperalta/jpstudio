@@ -6,11 +6,13 @@ import SectionHeading from "@/components/SectionHeading";
 import SecondaryButton from "@/components/buttons/SecondaryButton";
 import ProjectCard from "@/components/ProjectCard";
 import TestimonialCard from "@/components/TestimonialCard";
+import ProcessCard from "@/components/ProcessCard";
+import Link from "next/link";
 
 // JSON Data
 import projects from "@/data/projects.json";
 import testimonials from "@/data/testimonials.json";
-import Link from "next/link";
+import processes from "@/data/processes.json";
 
 export default function Home() {
   return (
@@ -320,7 +322,7 @@ export default function Home() {
       </section>
 
       {/* Team section */}
-      <section className="bg-lightGreen" id="team">
+      <section className="bg-lightGreen" id="team-section">
         <div className="mx-auto flex items-center justify-between gap-[12.5rem] pl-[4.5rem]">
           {/* Brief description of the team */}
           <div className="w-full max-w-[42rem]">
@@ -350,6 +352,24 @@ export default function Home() {
               height={881}
             />
           </div>
+        </div>
+      </section>
+
+      <section className="py-30" id="process-section">
+        <SectionHeading className="max-w-[46.625rem] pl-17">
+          The comprehensive process for building your website
+        </SectionHeading>
+
+        {/* List of the process for building a website */}
+        <div className="flex gap-11 overflow-x-auto px-14 pb-4 pl-17">
+          {processes.map((process) => (
+            <ProcessCard
+              key={process.id}
+              img={process.img}
+              title={process.title}
+              description={process.description}
+            />
+          ))}
         </div>
       </section>
     </main>

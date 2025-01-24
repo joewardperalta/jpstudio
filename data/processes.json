@@ -1,0 +1,56 @@
+[
+  {
+    "id": 0,
+    "img": {
+      "src": "/images/On Boarding.png",
+      "alt": "Two people in a video call"
+    },
+    "title": "Discovery",
+    "description": "Understanding the client’s goals, target audience, and market through meetings, surveys, and competitor analysis."
+  },
+  {
+    "id": 1,
+    "img": {
+      "src": "/images/Planning.png",
+      "alt": "Two people sitting on a table with their laptop planning for the website design & development."
+    },
+    "title": "Planning",
+    "description": "Defining project scope, timelines, site architecture, and creating a roadmap for execution."
+  },
+  {
+    "id": 2,
+    "img": {
+      "src": "/images/Design.png",
+      "alt": "Three mobile devices with wireframes showing on its screen."
+    },
+    "title": "Design",
+    "description": "Crafting wireframes, mockups, and prototypes, focusing on user experience (UX) and aesthetics."
+  },
+  {
+    "id": 3,
+    "img": {
+      "src": "/images/Development.png",
+      "alt": "A person facing with his laptop coding the website using vscode."
+    },
+    "title": "Development",
+    "description": "Building the website using modern programming tools & languages, integrating features, and ensuring functionality across devices."
+  },
+  {
+    "id": 4,
+    "img": {
+      "src": "/images/Testing.png",
+      "alt": "People looking at the code on a laptop, ensuring its security is stable."
+    },
+    "title": "Testing",
+    "description": "Checking for bugs, responsiveness, usability, and assuring optimal performance."
+  },
+  {
+    "id": 5,
+    "img": {
+      "src": "/images/Launch.png",
+      "alt": "A laptop and desktop showing the website's launch."
+    },
+    "title": "Launch",
+    "description": "Deploying the website live, providing a smooth transition from staging to production."
+  }
+]
