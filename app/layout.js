@@ -22,7 +22,7 @@ export default function RootLayout({ children }) {
 
         {/* Footer section */}
         <footer>
-          <div className="mx-auto max-w-[90rem] px-17 py-11">
+          <div className="mx-auto max-w-[90rem] px-17 py-11 pb-17">
             {/* Logo */}
             <Image
               className="mb-[3.25rem]"
