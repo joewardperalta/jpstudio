@@ -372,6 +372,28 @@ export default function Home() {
           ))}
         </div>
       </section>
+
+      <section className="bg-lightPurple">
+        <Wrapper>
+          <div className="mx-auto max-w-[67.25rem]">
+            <SectionHeading className="text-center text-[5.75rem]">
+              Are you ready to take the next step?
+            </SectionHeading>
+
+            {/* CTA buttons */}
+            <div className="flex items-center justify-center gap-8">
+              <Link href="/proposal">
+                <PrimaryButton className="bg-black text-white">
+                  Get Started
+                </PrimaryButton>
+              </Link>
+              <Link href="/contact">
+                <SecondaryButton>Contact us</SecondaryButton>
+              </Link>
+            </div>
+          </div>
+        </Wrapper>
+      </section>
     </main>
   );
 }
