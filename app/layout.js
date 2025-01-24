@@ -1,6 +1,9 @@
 import { Raleway } from "next/font/google";
 import "./globals.css";
 import Script from "next/script";
+import Wrapper from "@/components/Wrapper";
+import Image from "next/image";
+import Link from "next/link";
 
 const raleway = Raleway({
   subsets: ["latin"],
@@ -16,6 +19,136 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={raleway.className}>
         {children}
+
+        {/* Footer section */}
+        <footer>
+          <div className="mx-auto max-w-[90rem] px-17 py-11">
+            {/* Logo */}
+            <Image
+              className="mb-[3.25rem]"
+              src="/images/jpstudio logo.png"
+              alt="jpstudio agency logo"
+              width={149}
+              height={36}
+            />
+
+            {/* Footer links */}
+            <div className="flex justify-between gap-[7.1875rem] text-sm leading-[1.5]">
+              {/* Navigation links */}
+              <div>
+                <h6 className="mb-6 text-sm font-medium leading-[1.5]">
+                  Navigation
+                </h6>
+                <ul className="space-y-[1.25rem]">
+                  <li>
+                    <Link href="/work">Work</Link>
+                  </li>
+                  <li>
+                    <Link href="/about">About Us</Link>
+                  </li>
+                  <li>
+                    <Link href="/contact">Contact Us</Link>
+                  </li>
+                </ul>
+              </div>
+
+              {/* Services links */}
+              <div>
+                <h6 className="mb-6 text-sm font-medium leading-[1.5]">
+                  Services
+                </h6>
+                <ul className="space-y-[1.25rem]">
+                  <li>
+                    <Link href="/web-design-and-development">
+                      Web Design & Development
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="/hostin-and-domain-setup">
+                      Hosting & Domain Setup
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="/seo-optimization">SEO Optimization</Link>
+                  </li>
+                  <li>
+                    <Link href="/analytics-integration">
+                      Analytics Integration
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="/ecommerce-functionality">
+                      E-commerce Functionality
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="/maintenance-support">Maintenance Support</Link>
+                  </li>
+                </ul>
+              </div>
+
+              {/* Social links */}
+              <div>
+                <h6 className="mb-6 text-sm font-medium leading-[1.5]">
+                  Follow us
+                </h6>
+
+                {/* TODO: Add the links for each social media */}
+                <ul className="space-y-[1.25rem]">
+                  <li>
+                    <Link href="">Facebook</Link>
+                  </li>
+                  <li>
+                    <Link href="">Instagram</Link>
+                  </li>
+                  <li>
+                    <Link href="">Twitter</Link>
+                  </li>
+                  <li>
+                    <Link href="">LinkedIn</Link>
+                  </li>
+                </ul>
+              </div>
+
+              {/* Contact info */}
+              <div>
+                <h6 className="mb-6 text-sm font-medium leading-[1.5]">
+                  Contact Info
+                </h6>
+                <ul className="space-y-[1.25rem]">
+                  <li>
+                    <Link href="mail:contact@jpstudio.ca">
+                      contact@jpstudio.ca
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="tel:+16479013040">+1 647 901 3040</Link>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          {/* Copywrite and legal documents */}
+          <div className="mb-4 w-full border-t py-5">
+            <div className="mx-auto flex w-full max-w-[90rem] justify-between px-17">
+              <p className="text-end text-sm leading-[1.5]">
+                © 2024 JPStudio Web Design Agency
+              </p>
+
+              {/* Legal document links */}
+              {/* TODO: Add the link for each of the legal documents */}
+              <ul className="flex gap-6 text-sm leading-[1.5]">
+                <li>
+                  <Link href="">Terms of Service</Link>
+                </li>
+                <li>
+                  <Link href="">Privacy Policy</Link>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </footer>
 
         <Script src="https://kit.fontawesome.com/d924478ec2.js" />
       </body>
