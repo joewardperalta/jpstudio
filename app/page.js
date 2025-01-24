@@ -358,7 +358,7 @@ export default function Home() {
       </section>
 
       <section className="py-30" id="process-section">
-        <SectionHeading className="max-w-[46.625rem] pl-17">
+        <SectionHeading className="max-w-[51.125rem] pl-17">
           The comprehensive process for building your website
         </SectionHeading>
 
