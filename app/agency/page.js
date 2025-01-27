@@ -101,7 +101,7 @@ export default function page() {
               <div className="">
                 {/* Team member's profile photo */}
                 <Image
-                  className="mb-4 w-full rounded-2xl"
+                  className="mb-4 h-auto w-full rounded-2xl"
                   src={member.img.src}
                   alt={member.img.alt}
                   width={525}

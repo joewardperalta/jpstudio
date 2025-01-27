@@ -8,7 +8,7 @@ export default function Nav() {
       {/* Logo */}
       <Link href="/">
         <Image
-          className="h-fit w-fit"
+          className="h-auto w-full"
           src="/images/jpstudio logo white.png"
           alt="jpstudio logo"
           width={149}
