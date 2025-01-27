@@ -1,3 +1,4 @@
+import SectionHeading from "@/components/SectionHeading";
 import SubTitle from "@/components/SubTitle";
 import Title from "@/components/Title";
 import Wrapper from "@/components/Wrapper";
@@ -25,6 +26,32 @@ export default function page() {
             height={1080}
           />
         </Wrapper>
+      </section>
+
+      <section id="mission-and-vision-section">
+        <div className="mx-auto max-w-[1440px]">
+          <Wrapper>
+            {/* Mission */}
+            <div className="flex justify-between gap-20 border-b border-black py-17">
+              <SectionHeading className="w-full">Mission</SectionHeading>
+              <p className="w-full text-2xl leading-[1.7]">
+                Our mission is to create impactful web designs that drive
+                growth, enhance brand presence, and foster meaningful
+                connections with your customers.
+              </p>
+            </div>
+
+            {/* Vision */}
+            <div className="flex justify-between gap-20 py-17">
+              <SectionHeading className="w-full">Vision</SectionHeading>
+              <p className="w-full text-2xl leading-[1.7]">
+                To be the trusted partner for businesses, empowering them to
+                achieve their goals through innovative and user-centric web
+                solutions.
+              </p>
+            </div>
+          </Wrapper>
+        </div>
       </section>
     </main>
   );
