@@ -1,6 +1,10 @@
 import Image from "next/image";
 import Link from "next/link";
 import PrimaryButton from "./buttons/PrimaryButton";
+import DropdownButton from "./buttons/DropdownButton";
+
+// JSON data
+import services from "@/data/services.json";
 
 export default function Nav() {
   return (
@@ -23,7 +27,7 @@ export default function Nav() {
             <Link href="/work">Work</Link>
           </li>
           <li>
-            <Link href="/services">Services</Link>
+            <DropdownButton title="Services" items={services} />
           </li>
           <li>
             <Link href="/agency">Agency</Link>

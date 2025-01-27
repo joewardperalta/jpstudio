@@ -1,0 +1,32 @@
+[
+  {
+    "id": 0,
+    "title": "Web Design & Development",
+    "pageUrl": "/web-design-and-development"
+  },
+  {
+    "id": 1,
+    "title": "Hosting & Domain Setup",
+    "pageUrl": "/hosting-and-domain-setup"
+  },
+  {
+    "id": 2,
+    "title": "SEO Optimization",
+    "pageUrl": "/seo-optimization"
+  },
+  {
+    "id": 3,
+    "title": "Analytics Integration",
+    "pageUrl": "/analytics-integration"
+  },
+  {
+    "id": 4,
+    "title": "E-commerce Functionality",
+    "pageUrl": "/ecommerce-functionality"
+  },
+  {
+    "id": 5,
+    "title": "Maintenance Support",
+    "pageUrl": "/maintenance-support"
+  }
+]

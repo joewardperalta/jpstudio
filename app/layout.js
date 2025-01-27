@@ -1,7 +1,6 @@
 import { Raleway } from "next/font/google";
 import "./globals.css";
 import Script from "next/script";
-import Wrapper from "@/components/Wrapper";
 import Image from "next/image";
 import Link from "next/link";
 import Nav from "@/components/Nav";
