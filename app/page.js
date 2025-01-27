@@ -294,6 +294,7 @@ export default function Home() {
                 }}
                 name={project.name}
                 brief={project.brief}
+                siteUrl={project.siteUrl}
               />
             ))}
           </div>
