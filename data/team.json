@@ -1,0 +1,29 @@
+[
+  {
+    "id": 0,
+    "name": "Joeward Peralta",
+    "role": "Full Stack Developer",
+    "img": {
+      "src": "/images/Joeward Peralta profile.png",
+      "alt": "Joeward Peralta profile photo wearing a formal turtle neck"
+    }
+  },
+  {
+    "id": 1,
+    "name": "Johanna Cedeño",
+    "role": "UI/UX Designer",
+    "img": {
+      "src": "/images/Johanna Profile.png",
+      "alt": "Johanna Cedeño profile photo sitting in a restaurant"
+    }
+  },
+  {
+    "id": 2,
+    "name": "Christiana Ifenkwe",
+    "role": "UI/UX Designer",
+    "img": {
+      "src": "/images/Christiana Profile.png",
+      "alt": "Christiana Ifenkwe profile photo in a restaurant wearing a formal black and white dress"
+    }
+  }
+]

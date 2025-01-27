@@ -3,7 +3,10 @@ import SubTitle from "@/components/SubTitle";
 import Title from "@/components/Title";
 import Wrapper from "@/components/Wrapper";
 import Image from "next/image";
+
+// JSON Data
 import values from "@/data/values.json";
+import team from "@/data/team.json";
 
 export default function page() {
   return (
@@ -77,6 +80,38 @@ export default function page() {
                   </h3>
                 </div>
                 <p>{value.description}</p>
+              </div>
+            ))}
+          </div>
+        </Wrapper>
+      </section>
+
+      <section id="team-section">
+        <Wrapper>
+          <SectionHeading className="text-center">
+            Meet our professional team
+          </SectionHeading>
+
+          {/* List of team members */}
+          <div className="flex gap-16">
+            {team.map((member) => (
+              <div className="">
+                {/* Team member's profile photo */}
+                <Image
+                  className="mb-4 w-full rounded-2xl"
+                  src={member.img.src}
+                  alt={member.img.alt}
+                  width={525}
+                  height={700}
+                />
+
+                {/* Team member's name and role */}
+                <div>
+                  <h3 className="text-xl font-medium leading-[1.7] text-black">
+                    {member.name}
+                  </h3>
+                  <p className="text-gray">{member.role}</p>
+                </div>
               </div>
             ))}
           </div>
