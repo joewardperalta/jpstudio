@@ -3,6 +3,7 @@ import SubTitle from "@/components/SubTitle";
 import Title from "@/components/Title";
 import Wrapper from "@/components/Wrapper";
 import Image from "next/image";
+import values from "@/data/values.json";
 
 export default function page() {
   return (
@@ -29,7 +30,7 @@ export default function page() {
       </section>
 
       <section id="mission-and-vision-section">
-        <div className="mx-auto max-w-[1440px]">
+        <div className="mx-auto max-w-[90rem]">
           <Wrapper>
             {/* Mission */}
             <div className="flex justify-between gap-20 border-b border-black py-17">
@@ -52,6 +53,34 @@ export default function page() {
             </div>
           </Wrapper>
         </div>
+      </section>
+
+      <section id="values-section">
+        <Wrapper>
+          <SectionHeading className="max-w-[34.25rem]">
+            The values we bring to your business
+          </SectionHeading>
+
+          {/* List of agency values */}
+          <div className="flex flex-wrap gap-16" id="agency-values">
+            {values.map((value) => (
+              <div className="max-w-[22.25rem]" key={value.id}>
+                <div className="mb-3 flex gap-3">
+                  <Image
+                    src="/vectors/arrow-right-long.svg"
+                    alt="arrow right icon"
+                    width={25}
+                    height={16}
+                  />
+                  <h3 className="text-xl font-medium capitalize leading-[1.7]">
+                    {value.title}
+                  </h3>
+                </div>
+                <p>{value.description}</p>
+              </div>
+            ))}
+          </div>
+        </Wrapper>
       </section>
     </main>
   );

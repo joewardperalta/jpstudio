@@ -1,0 +1,27 @@
+[
+  {
+    "id": 0,
+    "title": "Quality First",
+    "description": "Delivering exceptional, scalable, and usable solutions tailored to your client needs."
+  },
+  {
+    "id": 1,
+    "title": "Client-Centricity",
+    "description": "Building strong relationships through collaboration, transparency, and a personalized approach."
+  },
+  {
+    "id": 2,
+    "title": "Innovation",
+    "description": "Embracing modern technologies to create cutting-edge designs and functionalities."
+  },
+  {
+    "id": 3,
+    "title": "Integrity",
+    "description": "Taking full responsibility in every project, ensuring transparency, and trust."
+  },
+  {
+    "id": 4,
+    "title": "Empowerment",
+    "description": "Helping your business grow and succeed in today’s ever-evolving digital world."
+  }
+]
