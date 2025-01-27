@@ -6,7 +6,7 @@ import Image from "next/image";
 export default function page() {
   return (
     <main>
-      <section>
+      <section id="hero-section">
         <Wrapper>
           <div className="mb-24">
             <Title className="text-center">Modernity & Professionalism</Title>
