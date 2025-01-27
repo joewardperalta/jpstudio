@@ -55,7 +55,7 @@ export default function page() {
         </div>
       </section>
 
-      <section id="values-section">
+      <section className="bg-lightPurple" id="values-section">
         <Wrapper>
           <SectionHeading className="max-w-[34.25rem]">
             The values we bring to your business
