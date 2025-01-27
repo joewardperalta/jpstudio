@@ -43,6 +43,12 @@ export default {
             lineHeight: "1.2",
           },
         ],
+        sm: [
+          "1rem",
+          {
+            lineHeight: 1.7,
+          },
+        ],
         base: [
           "1.125rem",
           {

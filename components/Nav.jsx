@@ -30,7 +30,7 @@ export default function Nav() {
           </li>
           <li>
             <Link href="/proposal">
-              <PrimaryButton className="bg-primary px-10 text-[16px]">
+              <PrimaryButton className="bg-primary px-10 text-sm">
                 Get Started
               </PrimaryButton>
             </Link>
