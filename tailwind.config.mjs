@@ -24,6 +24,10 @@ export default {
         30: "7.5rem",
       },
 
+      margin: {
+        30: "7.5rem",
+      },
+
       fontSize: {
         title: [
           "5rem",

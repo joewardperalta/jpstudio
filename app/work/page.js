@@ -10,7 +10,7 @@ export default function page() {
     <main>
       <section>
         <Wrapper>
-          <Title className="text-center">Latest Projects</Title>
+          <Title className="mb-30 text-center">Latest Projects</Title>
 
           {/* List of projects */}
           <div className="flex gap-20">

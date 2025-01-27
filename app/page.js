@@ -22,7 +22,7 @@ export default function Home() {
       {/* Hero Section */}
       <section className="bg-black" id="hero-section">
         <Wrapper>
-          <div className="desktop:mx-auto desktop:my-[4.875rem] desktop:w-[81rem]">
+          <div className="mx-auto my-[4.875rem] max-w-[81rem]">
             <Title className="text-center text-white">
               We build modern and professional website for your business
             </Title>
