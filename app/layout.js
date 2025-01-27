@@ -4,6 +4,7 @@ import Script from "next/script";
 import Wrapper from "@/components/Wrapper";
 import Image from "next/image";
 import Link from "next/link";
+import Nav from "@/components/Nav";
 
 const raleway = Raleway({
   subsets: ["latin"],
@@ -18,6 +19,10 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={raleway.className}>
+        {/* Top nav */}
+        <Nav />
+
+        {/* Main page content */}
         {children}
 
         {/* Footer section */}
