@@ -3,6 +3,9 @@ import SubTitle from "@/components/SubTitle";
 import Title from "@/components/Title";
 import Wrapper from "@/components/Wrapper";
 import Image from "next/image";
+import Link from "next/link";
+import PrimaryButton from "@/components/buttons/PrimaryButton";
+import SecondaryButton from "@/components/buttons/SecondaryButton";
 
 // JSON Data
 import values from "@/data/values.json";
@@ -114,6 +117,29 @@ export default function page() {
                 </div>
               </div>
             ))}
+          </div>
+        </Wrapper>
+      </section>
+
+      {/* CTA Section */}
+      <section className="bg-lightPurple">
+        <Wrapper>
+          <div className="mx-auto max-w-[67.25rem]">
+            <SectionHeading className="text-center text-[5.75rem]">
+              Start growing your business' online presence!
+            </SectionHeading>
+
+            {/* CTA buttons */}
+            <div className="flex items-center justify-center gap-8">
+              <Link href="/proposal">
+                <PrimaryButton className="bg-black text-white">
+                  Get Started
+                </PrimaryButton>
+              </Link>
+              <Link href="/contact">
+                <SecondaryButton>Contact us</SecondaryButton>
+              </Link>
+            </div>
           </div>
         </Wrapper>
       </section>
