@@ -6,13 +6,13 @@ import DropdownButton from "./buttons/DropdownButton";
 // JSON data
 import services from "@/data/services.json";
 
-export default function Nav({className}) {
+export default function Nav({ className }) {
   return (
     <div className={`nav ${className}`}>
       {/* Logo */}
       <Link href="/">
         <Image
-          className="h-auto w-full"
+          className="h-auto w-52"
           src="/images/jpstudio logo white.png"
           alt="jpstudio logo"
           width={149}
