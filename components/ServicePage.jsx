@@ -6,13 +6,13 @@ import SectionHeading from "./SectionHeading";
 import Image from "next/image";
 import { useState } from "react";
 import TestimonialCard from "./TestimonialCard";
+import CallToAction from "./CallToAction";
 
 export default function ServicePage({
   title,
   subTitle,
   features = [],
   testimonials = [],
-  img,
 }) {
   const [currentActiveFeature, setCurrentActiveFeature] = useState(features[0]);
 
@@ -121,6 +121,9 @@ export default function ServicePage({
           </div>
         </Wrapper>
       </section>
+
+      {/* CTA section */}
+      <CallToAction text="From concept to launch—we’ve got you covered." />
     </main>
   );
 }

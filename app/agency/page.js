@@ -10,6 +10,7 @@ import SecondaryButton from "@/components/buttons/SecondaryButton";
 // JSON Data
 import values from "@/data/values.json";
 import team from "@/data/team.json";
+import CallToAction from "@/components/CallToAction";
 
 export default function page() {
   return (
@@ -98,7 +99,7 @@ export default function page() {
           {/* List of team members */}
           <div className="flex gap-16">
             {team.map((member) => (
-              <div className="">
+              <div key={member.id} className="">
                 {/* Team member's profile photo */}
                 <Image
                   className="mb-4 h-auto w-full rounded-2xl"
@@ -122,27 +123,7 @@ export default function page() {
       </section>
 
       {/* CTA Section */}
-      <section className="bg-lightPurple">
-        <Wrapper>
-          <div className="mx-auto max-w-[67.25rem]">
-            <SectionHeading className="text-center text-[5.75rem]">
-              Start growing your business' online presence!
-            </SectionHeading>
-
-            {/* CTA buttons */}
-            <div className="flex items-center justify-center gap-8">
-              <Link href="/proposal">
-                <PrimaryButton className="bg-black text-white">
-                  Get Started
-                </PrimaryButton>
-              </Link>
-              <Link href="/contact">
-                <SecondaryButton>Contact us</SecondaryButton>
-              </Link>
-            </div>
-          </div>
-        </Wrapper>
-      </section>
+      <CallToAction text="Start growing your business' online presence!" />
     </main>
   );
 }

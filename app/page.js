@@ -9,6 +9,7 @@ import TestimonialCard from "@/components/TestimonialCard";
 import ProcessCard from "@/components/ProcessCard";
 import Link from "next/link";
 import QuestionAndAnswerCard from "@/components/QuestionAndAnswerCard";
+import CallToAction from "@/components/CallToAction";
 
 // JSON Data
 import projects from "@/data/projects.json";
@@ -377,27 +378,7 @@ export default function Home() {
       </section>
 
       {/* CTA Section */}
-      <section className="bg-lightPurple">
-        <Wrapper>
-          <div className="mx-auto max-w-[67.25rem]">
-            <SectionHeading className="text-center text-[5.75rem]">
-              Are you ready to take the next step?
-            </SectionHeading>
-
-            {/* CTA buttons */}
-            <div className="flex items-center justify-center gap-8">
-              <Link href="/proposal">
-                <PrimaryButton className="bg-black text-white">
-                  Get Started
-                </PrimaryButton>
-              </Link>
-              <Link href="/contact">
-                <SecondaryButton>Contact us</SecondaryButton>
-              </Link>
-            </div>
-          </div>
-        </Wrapper>
-      </section>
+      <CallToAction text="Are you ready to take the next step?" />
 
       {/* Frequently asked questions */}
       <section id="FAQ">
