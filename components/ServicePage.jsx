@@ -13,6 +13,7 @@ export default function ServicePage({
   subTitle,
   features = [],
   testimonials = [],
+  cta,
 }) {
   const [currentActiveFeature, setCurrentActiveFeature] = useState(features[0]);
 
@@ -123,7 +124,7 @@ export default function ServicePage({
       </section>
 
       {/* CTA section */}
-      <CallToAction text="From concept to launch—we’ve got you covered." />
+      <CallToAction text={cta} />
     </main>
   );
 }

@@ -5,7 +5,7 @@ import services from "@/data/services.json";
 import testimonials from "@/data/testimonials.json";
 
 export default function page() {
-  const service = services[0];
+  const service = services[1];
 
   return (
     <ServicePage
@@ -13,7 +13,7 @@ export default function page() {
       subTitle={service.subTitle}
       features={service.features}
       testimonials={testimonials}
-      cta="Turn visitors into customers."
+      cta="Don’t just build a website—build your brand."
     />
   );
 }
