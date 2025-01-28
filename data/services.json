@@ -98,7 +98,7 @@
         "title": "Keyword Research & Implementation",
         "description": "Identifying and integrating relevant keywords into website content, meta tags, and headers to boost search engine rankings.",
         "img": {
-          "src": "/images/UX Design For Web-15.png",
+          "src": "/images/UX Design For Web.png",
           "alt": "Feature image"
         }
       },
@@ -107,7 +107,7 @@
         "title": "On-Page Optimization",
         "description": "Ensuring optimal site structure, fast loading speeds, mobile responsiveness, and proper use of title tags, meta descriptions, and internal linking.",
         "img": {
-          "src": "/images/UX Design For Web-14.png",
+          "src": "/images/UX Design For Web-2.png",
           "alt": "Feature image"
         }
       },
@@ -116,7 +116,7 @@
         "title": "Content Creation",
         "description": "Developing high-quality, engaging, and SEO-friendly content, including blogs, case studies, and landing pages to attract and retain visitors.",
         "img": {
-          "src": "/images/UX Design For Web-13.png",
+          "src": "/images/UX Design For Web-4.png",
           "alt": "Feature image"
         }
       },
@@ -125,7 +125,7 @@
         "title": "Performance Monitoring & Analytics",
         "description": "Using tools like Google Analytics and Search Console to track website performance, analyze traffic, and refine strategies for continuous improvement.",
         "img": {
-          "src": "/images/UX Design For Web-12.png",
+          "src": "/images/UX Design For Web-3.png",
           "alt": "Feature image"
         }
       }
@@ -142,7 +142,7 @@
         "title": "Real-Time Data Tracking",
         "description": "Enables monitoring of user behavior, traffic sources, and key metrics as they occur, providing instant insights for timely decisions.",
         "img": {
-          "src": "/images/UX Design For Web-11.png",
+          "src": "/images/UX Design For Web-5.png",
           "alt": "Feature image"
         }
       },
@@ -151,7 +151,7 @@
         "title": "Customizable Dashboards",
         "description": "Allows the creation of tailored dashboards that highlight specific KPIs and metrics relevant to clients’ goals and objectives.",
         "img": {
-          "src": "/images/UX Design For Web-10.png",
+          "src": "/images/UX Design For Web-6.png",
           "alt": "Feature image"
         }
       },
@@ -160,7 +160,7 @@
         "title": "User Behavior Insights",
         "description": "Provides data on user interactions, such as time spent on pages, click patterns, and navigation flow, to optimize the user experience.",
         "img": {
-          "src": "/images/UX Design For Web-9.png",
+          "src": "/images/UX Design For Web-7.png",
           "alt": "Feature image"
         }
       },
@@ -169,7 +169,7 @@
         "title": "Conversion Tracking",
         "description": "Monitors key actions like form submissions, purchases, or sign-ups, helping measure the effectiveness of marketing campaigns and website performance.",
         "img": {
-          "src": "/images/UX Design For Web-8.png",
+          "src": "/images/UX Design For Web-9.png",
           "alt": "Feature image"
         }
       }
@@ -186,7 +186,7 @@
         "title": "Product Management",
         "description": "Tools for adding, organizing, and managing product catalogs with options for variants, categories, and inventory tracking.",
         "img": {
-          "src": "/images/UX Design For Web-7.png",
+          "src": "/images/UX Design For Web-8.png",
           "alt": "Feature image"
         }
       },
@@ -195,7 +195,7 @@
         "title": "Secure Payment Gateways",
         "description": "Integration with trusted payment processors like PayPal or Stripe to ensure seamless and secure transactions.",
         "img": {
-          "src": "/images/UX Design For Web-6.png",
+          "src": "/images/UX Design For Web-10.png",
           "alt": "Feature image"
         }
       },
@@ -204,7 +204,7 @@
         "title": "User-Friendly Shopping Experience",
         "description": "Features like search filters, product recommendations, and a streamlined checkout process to enhance customer satisfaction and reduce cart abandonment.",
         "img": {
-          "src": "/images/UX Design For Web-5.png",
+          "src": "/images/UX Design For Web-11.png",
           "alt": "Feature image"
         }
       },
@@ -213,7 +213,7 @@
         "title": "Order and Shipping Management",
         "description": "Systems to handle order processing, tracking, and integration with shipping carriers for real-time delivery updates.",
         "img": {
-          "src": "/images/UX Design For Web-4.png",
+          "src": "/images/UX Design For Web-1.png",
           "alt": "Feature image"
         }
       }
@@ -230,7 +230,7 @@
         "title": "Regular Updates",
         "description": "Ensures the website’s core software, plugins, and themes are up-to-date to maintain security, functionality, and compatibility.",
         "img": {
-          "src": "/images/UX Design For Web-3.png",
+          "src": "/images/UX Design For Web-12.png",
           "alt": "Feature image"
         }
       },
@@ -239,7 +239,7 @@
         "title": "Performance Optimization",
         "description": "Monitoring and improving site speed, fixing broken links, and optimizing databases to deliver a smooth user experience.",
         "img": {
-          "src": "/images/UX Design For Web-2.png",
+          "src": "/images/UX Design For Web-13.png",
           "alt": "Feature image"
         }
       },
@@ -248,7 +248,7 @@
         "title": "Security Monitoring",
         "description": "Provides ongoing protection with malware scans, firewalls, and regular vulnerability assessments to prevent breaches.",
         "img": {
-          "src": "/images/UX Design For Web-1.png",
+          "src": "/images/UX Design For Web-14.png",
           "alt": "Feature image"
         }
       },
@@ -257,7 +257,7 @@
         "title": "Backup and Recovery",
         "description": "Scheduled backups and quick restoration services ensure data safety and minimal downtime in case of issues.",
         "img": {
-          "src": "/images/UX Design For Web.png",
+          "src": "/images/UX Design For Web-15.png",
           "alt": "Feature image"
         }
       }

@@ -32,7 +32,7 @@ export default function ServicePage({
         <div className="flex">
           <div className="flex w-full items-center">
             {/* Info */}
-            <div className="w-full max-w-[68.75rem] px-36">
+            <div className="w-full max-w-[50rem] px-28">
               {/* Feature title */}
               <SectionHeading className="mb-[2rem]">
                 {currentActiveFeature.title}
