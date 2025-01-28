@@ -5,12 +5,13 @@ import SubTitle from "./SubTitle";
 import SectionHeading from "./SectionHeading";
 import Image from "next/image";
 import { useState } from "react";
+import TestimonialCard from "./TestimonialCard";
 
 export default function ServicePage({
   title,
   subTitle,
   features = [],
-  testimonial,
+  testimonials = [],
   img,
 }) {
   const [currentActiveFeature, setCurrentActiveFeature] = useState(features[0]);
@@ -30,7 +31,7 @@ export default function ServicePage({
         <div className="flex">
           <div className="flex w-full items-center">
             {/* Info */}
-            <div className="max-w-[68.75rem] px-40">
+            <div className="w-full max-w-[68.75rem] px-36">
               {/* Feature title */}
               <SectionHeading className="mb-[2rem]">
                 {currentActiveFeature.title}
@@ -89,7 +90,7 @@ export default function ServicePage({
             {/* Feature image */}
             <div className="h-[881px] w-full">
               <Image
-                className="h-full w-full rounded-l-[2.25rem] object-cover"
+                className="h-full w-full rounded-l-[2.25rem] object-cover object-left"
                 src={currentActiveFeature.img.src}
                 alt={currentActiveFeature.img.alt}
                 width={2644}
@@ -98,6 +99,27 @@ export default function ServicePage({
             </div>
           </div>
         </div>
+      </section>
+
+      {/* Testimonial section */}
+      <section>
+        <Wrapper>
+          <SectionHeading className="text-center">
+            What People Are Saying
+          </SectionHeading>
+
+          {/* Testimonials */}
+          <div className="flex justify-center gap-11">
+            {testimonials.map((testimonial) => (
+              <TestimonialCard
+                key={testimonial.id}
+                author={testimonial.author}
+                avatar={testimonial.avatar}
+                message={testimonial.message}
+              />
+            ))}
+          </div>
+        </Wrapper>
       </section>
     </main>
   );
