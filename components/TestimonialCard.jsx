@@ -3,7 +3,7 @@ import Image from "next/image";
 import SecondaryButton from "./buttons/SecondaryButton";
 import { useRef } from "react";
 
-export default function TestimonialCard({ author, avatar, message }) {
+export default function TestimonialCard({ author, avatar, message, className }) {
   const messageBoxRef = useRef(null);
   const readMoreButtonRef = useRef(null);
 
@@ -28,7 +28,7 @@ export default function TestimonialCard({ author, avatar, message }) {
   }
 
   return (
-    <div className="rounded-[4rem] border border-lightGray py-30 px-17 max-w-[37.5rem] w-full inline-block h-fit">
+    <div className={`testimonial-card ${className}`}>
       <div className="flex gap-5 mb-[2.1875rem]">
         {/* Avatar */}
         <Image

@@ -1,9 +1,9 @@
 import Image from "next/image";
 import Link from "next/link";
 
-export default function ProjectCard({ img, name, brief, siteUrl = "" }) {
+export default function ProjectCard({ img, name, brief, siteUrl = "", className }) {
   return (
-    <Link href={siteUrl} target="_blank">
+    <Link className={`project-card ${className}`} href={siteUrl} target="_blank">
       {/* Project mockup image */}
       <div className="mb-4">
         <Image

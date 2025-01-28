@@ -3,7 +3,7 @@ import Link from "next/link";
 import { useRef } from "react";
 import Image from "next/image";
 
-export default function DropdownButton({ title, items = [] }) {
+export default function DropdownButton({ title, items = [], className }) {
   const itemsRef = useRef(null);
 
   // Expand the dropdown list
@@ -12,7 +12,7 @@ export default function DropdownButton({ title, items = [] }) {
   }
 
   return (
-    <button className="relative" onClick={expand}>
+    <button className={`dropdown-button ${className}`} onClick={expand}>
       <div className="flex items-center gap-2">
         <span className="text-left">{title}</span>
         <Image

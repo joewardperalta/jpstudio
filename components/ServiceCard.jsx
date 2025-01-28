@@ -4,9 +4,9 @@ import PrimaryButton from "./buttons/PrimaryButton";
 import SecondaryButton from "./buttons/SecondaryButton";
 import Image from "next/image";
 
-export default function ServiceCard({ title, description, img }) {
+export default function ServiceCard({ title, description, img, className }) {
   return (
-    <div className="flex gap-50 items-center">
+    <div className={`service-card ${className}`}>
       <div className="max-w-[34.25rem]">
         {/* Description */}
         <div>

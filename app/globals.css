@@ -17,3 +17,57 @@
     font-size: 1.25rem;
   }
 }
+
+@layer components {
+  .primary-button {
+    @apply w-fit rounded-full px-14 py-5 text-medium font-medium;
+  }
+
+  .secondary-button {
+    @apply text-[1rem] w-fit font-medium;
+  }
+
+  .dropdown-button {
+    @apply relative;
+  }
+
+  .nav {
+    @apply flex items-center justify-between bg-black px-17 py-5 text-white;
+  }
+
+  .process-card {
+    @apply min-w-[39.75rem];
+  }
+
+  .project-card {
+
+  }
+
+  .question-and-answer-card {
+    @apply border-b border-gray py-[3.625rem];
+  }
+
+  .title {
+    @apply text-title mb-14;
+  }
+
+  .section-heading {
+    @apply mb-[4.5rem] text-sectionHeading;
+  }
+
+  .service-card {
+    @apply flex gap-50 items-center;
+  }
+
+  .sub-title {
+    @apply mx-auto max-w-[62.25rem] text-[2rem] leading-[1.5];
+  }
+
+  .testimonial-card {
+    @apply rounded-[4rem] border border-lightGray py-30 px-17 max-w-[37.5rem] w-full inline-block h-fit;
+  }
+
+  .wrapper {
+    @apply mx-auto max-w-[1920px] px-17 py-30;
+  }
+}

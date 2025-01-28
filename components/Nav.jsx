@@ -6,9 +6,9 @@ import DropdownButton from "./buttons/DropdownButton";
 // JSON data
 import services from "@/data/services.json";
 
-export default function Nav() {
+export default function Nav({className}) {
   return (
-    <div className="flex items-center justify-between bg-black px-17 py-5 text-white">
+    <div className={`nav ${className}`}>
       {/* Logo */}
       <Link href="/">
         <Image

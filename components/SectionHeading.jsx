@@ -1,6 +1,6 @@
-export default function SectionHeading({ children, className = "" }) {
+export default function SectionHeading({ children, className}) {
   return (
-    <h2 className={className + " mb-[4.5rem] text-sectionHeading"}>
+    <h2 className={`section-heading ${className}`}>
       {children}
     </h2>
   );

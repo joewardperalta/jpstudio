@@ -2,7 +2,7 @@
 import Image from "next/image";
 import { useRef, useState } from "react";
 
-export default function QuestionAndAnswerCard({ question, answer }) {
+export default function QuestionAndAnswerCard({ question, answer, className }) {
   const paragraphAnswerRef = useRef(null);
 
   // This function will open/close the answer text box
@@ -12,7 +12,7 @@ export default function QuestionAndAnswerCard({ question, answer }) {
   }
 
   return (
-    <div className="border-b border-gray py-[3.625rem]">
+    <div className={`question-and-answer-card ${className}`}>
       <div className="flex justify-between gap-8">
         <p className="text-[2rem]">{question}</p>
         <button onClick={toggle}>

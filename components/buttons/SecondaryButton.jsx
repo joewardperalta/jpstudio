@@ -1,9 +1,9 @@
 import Image from "next/image";
 
-export default function SecondaryButton({ children, onClick, ref }) {
+export default function SecondaryButton({ children, onClick, ref, className }) {
   return (
     <button
-      className="text-[1rem] w-fit font-medium"
+      className={`secondary-button ${className}`}
       onClick={onClick}
       ref={ref}
     >
