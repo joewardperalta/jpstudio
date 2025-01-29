@@ -45,9 +45,9 @@ export async function POST(request) {
     analyticsIntegration +
     " " +
     ecommerceIntegration +
-    " " +
+    "</br><b>Maintenance Support:</b> " +
     maintenanceSupport +
-    " " +
+    "</br><b>Budget:</b> " +
     budget;
 
   // send mail with defined transport object
