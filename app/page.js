@@ -31,7 +31,7 @@ export default function Home() {
             {/* CTA button */}
             <div className="mx-auto w-fit">
               <PrimaryButton className="bg-primary text-white">
-                Get Started
+                <Link href="/proposal">Get Started</Link>
               </PrimaryButton>
             </div>
           </div>
@@ -67,7 +67,7 @@ export default function Home() {
               {/* CTA buttons */}
               <div className="space-x-8">
                 <PrimaryButton className="bg-black text-white">
-                  Get Started
+                  <Link href="/proposal">Get Started</Link>
                 </PrimaryButton>
                 <SecondaryButton>Learn more</SecondaryButton>
               </div>
@@ -107,7 +107,7 @@ export default function Home() {
               {/* CTA buttons */}
               <div className="space-x-8">
                 <PrimaryButton className="bg-black text-white">
-                  Get Started
+                  <Link href="/proposal">Get Started</Link>
                 </PrimaryButton>
                 <SecondaryButton>Learn more</SecondaryButton>
               </div>
@@ -145,7 +145,7 @@ export default function Home() {
               {/* CTA buttons */}
               <div className="space-x-8">
                 <PrimaryButton className="bg-black text-white">
-                  Get Started
+                  <Link href="/proposal">Get Started</Link>
                 </PrimaryButton>
                 <SecondaryButton>Learn more</SecondaryButton>
               </div>
@@ -183,7 +183,7 @@ export default function Home() {
               </p>
               <div className="space-x-8">
                 <PrimaryButton className="bg-black text-white">
-                  Get Started
+                  <Link href="/proposal">Get Started</Link>
                 </PrimaryButton>
                 <SecondaryButton>Learn more</SecondaryButton>
               </div>
@@ -220,7 +220,7 @@ export default function Home() {
               </p>
               <div className="space-x-8">
                 <PrimaryButton className="bg-black text-white">
-                  Get Started
+                  <Link href="/proposal">Get Started</Link>
                 </PrimaryButton>
                 <SecondaryButton>Learn more</SecondaryButton>
               </div>
@@ -257,7 +257,7 @@ export default function Home() {
               </p>
               <div className="space-x-8">
                 <PrimaryButton className="bg-black text-white">
-                  Get Started
+                  <Link href="/proposal">Get Started</Link>
                 </PrimaryButton>
                 <SecondaryButton>Learn more</SecondaryButton>
               </div>

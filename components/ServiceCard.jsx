@@ -11,13 +11,13 @@ export default function ServiceCard({ title, description, img, className }) {
         {/* Description */}
         <div>
           <SectionHeading>{title}</SectionHeading>
-          <p className="text-base mb-10 text-gray">{description}</p>
+          <p className="mb-10 text-base text-gray">{description}</p>
         </div>
 
         {/* CTA buttons */}
         <div className="space-x-8">
           <PrimaryButton className="bg-black text-white">
-            Get Started
+            <Link href="/proposal">Get Started</Link>
           </PrimaryButton>
           <SecondaryButton>Learn more</SecondaryButton>
         </div>
@@ -26,7 +26,7 @@ export default function ServiceCard({ title, description, img, className }) {
       {/* Video showing the process */}
       <div>
         <Image
-          className="rounded-5xl max-h-[37.5rem] object-cover"
+          className="max-h-[37.5rem] rounded-5xl object-cover"
           src={img.src}
           width={4000}
           height={4000}
