@@ -69,7 +69,6 @@ export default function Home() {
                 <PrimaryButton className="bg-black text-white">
                   <Link href="/proposal">Get Started</Link>
                 </PrimaryButton>
-                <SecondaryButton>Learn more</SecondaryButton>
               </div>
             </div>
 
@@ -109,7 +108,6 @@ export default function Home() {
                 <PrimaryButton className="bg-black text-white">
                   <Link href="/proposal">Get Started</Link>
                 </PrimaryButton>
-                <SecondaryButton>Learn more</SecondaryButton>
               </div>
             </div>
 
@@ -147,7 +145,6 @@ export default function Home() {
                 <PrimaryButton className="bg-black text-white">
                   <Link href="/proposal">Get Started</Link>
                 </PrimaryButton>
-                <SecondaryButton>Learn more</SecondaryButton>
               </div>
             </div>
 
@@ -185,7 +182,6 @@ export default function Home() {
                 <PrimaryButton className="bg-black text-white">
                   <Link href="/proposal">Get Started</Link>
                 </PrimaryButton>
-                <SecondaryButton>Learn more</SecondaryButton>
               </div>
             </div>
 
@@ -222,7 +218,6 @@ export default function Home() {
                 <PrimaryButton className="bg-black text-white">
                   <Link href="/proposal">Get Started</Link>
                 </PrimaryButton>
-                <SecondaryButton>Learn more</SecondaryButton>
               </div>
             </div>
 
@@ -259,7 +254,6 @@ export default function Home() {
                 <PrimaryButton className="bg-black text-white">
                   <Link href="/proposal">Get Started</Link>
                 </PrimaryButton>
-                <SecondaryButton>Learn more</SecondaryButton>
               </div>
             </div>
 
@@ -341,7 +335,7 @@ export default function Home() {
               deliver scalable, secure digital platforms tailored to your unique
               needs.
             </p>
-            <Link href="/" target="_blank">
+            <Link href="/agency">
               <SecondaryButton>Learn more</SecondaryButton>
             </Link>
           </div>

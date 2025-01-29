@@ -35,7 +35,7 @@ export default function Nav({ className }) {
           <li>
             <Link href="/proposal">
               <PrimaryButton className="bg-primary px-10 text-sm">
-                <Link href="/proposal">Get Started</Link>
+                Get Started
               </PrimaryButton>
             </Link>
           </li>

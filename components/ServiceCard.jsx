@@ -1,7 +1,6 @@
 "use client";
 import SectionHeading from "./SectionHeading";
 import PrimaryButton from "./buttons/PrimaryButton";
-import SecondaryButton from "./buttons/SecondaryButton";
 import Image from "next/image";
 
 export default function ServiceCard({ title, description, img, className }) {
@@ -19,7 +18,6 @@ export default function ServiceCard({ title, description, img, className }) {
           <PrimaryButton className="bg-black text-white">
             <Link href="/proposal">Get Started</Link>
           </PrimaryButton>
-          <SecondaryButton>Learn more</SecondaryButton>
         </div>
       </div>
 

@@ -17,11 +17,8 @@ export default function CallToAction({ text }) {
           <div className="flex items-center justify-center gap-8">
             <Link href="/proposal">
               <PrimaryButton className="bg-black text-white">
-                <Link href="/proposal">Get Started</Link>
+                Get Started
               </PrimaryButton>
-            </Link>
-            <Link href="/contact">
-              <SecondaryButton>Contact us</SecondaryButton>
             </Link>
           </div>
         </div>
