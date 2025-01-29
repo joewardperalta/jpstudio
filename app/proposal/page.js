@@ -1,11 +1,33 @@
+"use client";
+
 import CheckBox from "@/components/buttons/CheckBox";
 import PrimaryButton from "@/components/buttons/PrimaryButton";
 import RadioButton from "@/components/buttons/RadioButton";
+import EmailInput from "@/components/EmailInput";
 import TextInput from "@/components/TextInput";
 import Title from "@/components/Title";
 import Wrapper from "@/components/Wrapper";
+import Form from "next/form";
 
 export default function page() {
+  async function sendEmail(event) {
+    event.preventDefault();
+
+    const formData = new FormData(event.target);
+
+    // Send the form data to the body of the sendEmail api
+    const response = await fetch("/api/sendemail", {
+      method: "POST",
+      body: formData,
+    });
+
+    // Handle response
+    const res = response.json();
+
+    // Notify that the email was successfuly sent
+    res.then((data) => alert(data.message));
+  }
+
   return (
     <main>
       {/* Hero section */}
@@ -18,7 +40,11 @@ export default function page() {
       {/* Form */}
       <section>
         <Wrapper className="py-0">
-          <form className="space-y-[6.5rem]">
+          <Form
+            onSubmit={sendEmail}
+            formMethod="POST"
+            className="space-y-[6.5rem]"
+          >
             {/* Services */}
             <div>
               <h3 className="mb-8 text-[2rem] font-medium">
@@ -27,13 +53,31 @@ export default function page() {
 
               {/* Services options */}
               <div className="flex gap-6">
-                <CheckBox id="web-design" name="services" value="Web Design" />
+                <CheckBox
+                  id="web-design"
+                  name="web-design"
+                  value="Web Design"
+                />
                 <CheckBox
                   id="web-development"
-                  name="services"
+                  name="web-development"
                   value="Web Development"
                 />
-                <CheckBox id="hosting" name="services" value="Hosting" />
+                <CheckBox
+                  id="domain-and-hosting-setup"
+                  name="domain-and-hosting-setup"
+                  value="Domain & Hosting Setup"
+                />
+                <CheckBox
+                  id="analytics-integration"
+                  name="analytics-integration"
+                  value="Analytics Integration"
+                />
+                <CheckBox
+                  id="ecommerce-integration"
+                  name="ecommerce-integration"
+                  value="E-commerce Integration"
+                />
               </div>
             </div>
 
@@ -79,8 +123,18 @@ export default function page() {
 
             {/* Customer information */}
             <div className="space-y-16">
-              <TextInput id="name" name="name" value="Your name" />
-              <TextInput id="email" name="email" value="Email" />
+              <TextInput
+                id="name"
+                name="name"
+                value="Your name"
+                required={true}
+              />
+              <EmailInput
+                id="email"
+                name="email"
+                value="Email"
+                required={true}
+              />
             </div>
 
             {/* Message box */}
@@ -98,10 +152,10 @@ export default function page() {
               />
             </div>
 
-            <PrimaryButton className="bg-black text-white">
-              <input type="submit" value="Send" />
+            <PrimaryButton className="bg-black text-white" type="submit">
+              Send
             </PrimaryButton>
-          </form>
+          </Form>
         </Wrapper>
       </section>
     </main>

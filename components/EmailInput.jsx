@@ -1,4 +1,4 @@
-export default function TextInput({ id, name, value, required = false }) {
+export default function EmailInput({ id, name, value, required = false }) {
   return (
     <div>
       <label className="mb-4 block text-[2rem] font-medium" htmlFor={name}>
@@ -6,7 +6,7 @@ export default function TextInput({ id, name, value, required = false }) {
       </label>
       <input
         className="w-full border-b border-black text-2xl leading-[1.7] focus-visible:outline-none"
-        type="text"
+        type="email"
         id={id}
         name={name}
         required={required}
