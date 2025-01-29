@@ -103,9 +103,6 @@ export default function RootLayout({ children }) {
                     <Link href="">Instagram</Link>
                   </li>
                   <li>
-                    <Link href="">Twitter</Link>
-                  </li>
-                  <li>
                     <Link href="">LinkedIn</Link>
                   </li>
                 </ul>
