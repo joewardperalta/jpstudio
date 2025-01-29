@@ -52,7 +52,7 @@ export default function page() {
               </h3>
 
               {/* Services options */}
-              <div className="flex gap-6">
+              <div className="flex flex-wrap gap-6">
                 <CheckBox
                   id="web-design"
                   name="web-design"
@@ -88,7 +88,7 @@ export default function page() {
               </h3>
 
               {/* Services options */}
-              <div className="flex gap-6">
+              <div className="flex flex-wrap gap-6">
                 <RadioButton id="yes" name="maintenance-support" value="yes" />
                 <RadioButton id="no" name="maintenance-support" value="no" />
               </div>
@@ -101,7 +101,7 @@ export default function page() {
               </h3>
 
               {/* Budget options */}
-              <div className="flex gap-6">
+              <div className="flex flex-wrap gap-6">
                 <RadioButton
                   id="100-300"
                   name="budget-option"
