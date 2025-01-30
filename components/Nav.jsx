@@ -5,6 +5,7 @@ import DropdownButton from "./buttons/DropdownButton";
 
 // JSON data
 import services from "@/data/services.json";
+import HamburgerButton from "./buttons/HamburgerButton";
 
 export default function Nav({ className }) {
   return (
@@ -41,6 +42,9 @@ export default function Nav({ className }) {
           </li>
         </ul>
       </nav>
+
+      {/* Hamburger Button */}
+      <HamburgerButton />
     </div>
   );
 }
