@@ -23,7 +23,7 @@ export default function Home() {
       {/* Hero Section */}
       <section className="bg-black" id="hero-section">
         <Wrapper>
-          <div className="mx-auto my-[4.875rem] max-w-[81rem]">
+          <div className="laptop:my-[4rem] mx-auto my-[2.5rem] max-w-[81rem] tablet:my-[3.7rem] desktop:my-[4.875rem]">
             <Title className="text-center text-white">
               We build modern and professional website for your business
             </Title>
@@ -37,7 +37,7 @@ export default function Home() {
           </div>
           <div>
             <Image
-              className="rounded-5xl"
+              className="rounded-2xl tablet:rounded-5xl"
               src="/images/comfort-sofa.jpg"
               width={3840}
               height={2160}
