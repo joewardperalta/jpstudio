@@ -47,7 +47,7 @@
   }
 
   .title {
-    @apply mb-14 text-title;
+    @apply laptop:mb-12 laptop:text-[4rem] mb-8 text-[2rem] tablet:mb-10 tablet:text-[3rem] desktop:mb-14 desktop:text-title;
   }
 
   .section-heading {
@@ -67,6 +67,6 @@
   }
 
   .wrapper {
-    @apply mx-auto max-w-[1920px] px-17 py-30;
+    @apply laptop:px-17 laptop:py-30 mx-auto max-w-[1920px] px-6 py-20;
   }
 }
