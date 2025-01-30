@@ -97,13 +97,28 @@ export default function RootLayout({ children }) {
                 {/* TODO: Add the links for each social media */}
                 <ul className="space-y-[1.25rem]">
                   <li>
-                    <Link href="">Facebook</Link>
+                    <Link
+                      href="https://www.facebook.com/profile.php?id=61572287565837"
+                      target="_blank"
+                    >
+                      Facebook
+                    </Link>
                   </li>
                   <li>
-                    <Link href="">Instagram</Link>
+                    <Link
+                      href="https://www.instagram.com/jpstudio_web_design_agency/"
+                      target="_blank"
+                    >
+                      Instagram
+                    </Link>
                   </li>
                   <li>
-                    <Link href="">LinkedIn</Link>
+                    <Link
+                      href="https://www.linkedin.com/company/jpstudiowebdesignagency/"
+                      target="_blank"
+                    >
+                      LinkedIn
+                    </Link>
                   </li>
                 </ul>
               </div>
@@ -115,7 +130,7 @@ export default function RootLayout({ children }) {
                 </h6>
                 <ul className="space-y-[1.25rem]">
                   <li>
-                    <Link href="mail:contact@jpstudio.ca">
+                    <Link href="mailto:contact@jpstudio.ca">
                       contact@jpstudio.ca
                     </Link>
                   </li>
