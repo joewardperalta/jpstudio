@@ -20,11 +20,11 @@
 
 @layer components {
   .primary-button {
-    @apply w-fit rounded-full px-14 py-5 text-medium font-medium;
+    @apply w-fit rounded-full px-14 py-5 text-xs font-medium tablet:text-medium;
   }
 
   .secondary-button {
-    @apply text-[1rem] w-fit font-medium;
+    @apply w-fit text-[1rem] font-medium;
   }
 
   .dropdown-button {
@@ -32,7 +32,7 @@
   }
 
   .nav {
-    @apply flex items-center justify-between bg-black px-17 py-5 text-white;
+    @apply flex items-center justify-between bg-black px-6 py-5 text-white tablet:px-8 desktop:px-17;
   }
 
   .process-card {
@@ -40,7 +40,6 @@
   }
 
   .project-card {
-
   }
 
   .question-and-answer-card {
@@ -48,7 +47,7 @@
   }
 
   .title {
-    @apply text-title mb-14;
+    @apply mb-14 text-title;
   }
 
   .section-heading {
@@ -56,7 +55,7 @@
   }
 
   .service-card {
-    @apply flex gap-50 items-center;
+    @apply flex items-center gap-50;
   }
 
   .sub-title {
@@ -64,7 +63,7 @@
   }
 
   .testimonial-card {
-    @apply rounded-[4rem] border border-lightGray py-30 px-17 max-w-[37.5rem] w-full inline-block h-fit;
+    @apply inline-block h-fit w-full max-w-[37.5rem] rounded-[4rem] border border-lightGray px-17 py-30;
   }
 
   .wrapper {
