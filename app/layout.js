@@ -17,7 +17,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={"h-full overflow-hidden " + raleway.className}>
+      <body className={raleway.className}>
         {/* Top nav */}
         <Nav />
 

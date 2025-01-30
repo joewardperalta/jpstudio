@@ -70,3 +70,7 @@
     @apply laptop:px-17 laptop:py-30 mx-auto max-w-[1920px] px-6 py-20;
   }
 }
+
+.disable-scrolling {
+  @apply h-full overflow-hidden;
+}

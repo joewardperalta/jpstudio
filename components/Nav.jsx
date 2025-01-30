@@ -14,6 +14,11 @@ export default function Nav({ className }) {
   // Nav reference
   const navRef = useRef(null);
 
+  // Disable scrolling behavior when nav is active on small device
+  function disableScroll() {
+    document.body.classList.toggle("disable-scrolling");
+  }
+
   // Toggle nav on/off
   function toggle() {
     navRef.current.classList.toggle("hidden");
@@ -67,7 +72,13 @@ export default function Nav({ className }) {
         </Link>
 
         {/* Hamburger Button */}
-        <HamburgerButton className="z-10" onClick={toggle} />
+        <HamburgerButton
+          className="z-10"
+          onClick={() => {
+            toggle();
+            disableScroll();
+          }}
+        />
       </div>
     </div>
   );
