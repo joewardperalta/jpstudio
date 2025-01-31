@@ -80,7 +80,7 @@ export default function Home() {
           </div>
 
           {/* Project list */}
-          <div className="flex gap-20">
+          <div className="laptop:gap-14 flex flex-col gap-8 tablet:flex-row desktop:gap-20">
             {projects.map((project) => (
               <ProjectCard
                 key={project.id}
