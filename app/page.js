@@ -106,7 +106,7 @@ export default function Home() {
             </SectionHeading>
 
             {/* Testimonials */}
-            <div className="space-x-11 overflow-scroll whitespace-nowrap">
+            <div className="space-x-11 overflow-x-scroll whitespace-nowrap">
               {testimonials.map((testimonial) => (
                 <TestimonialCard
                   className="inline-block"
