@@ -4,6 +4,11 @@
     "pageUrl": "/web-design-and-development",
     "title": "Web Design & Development",
     "subTitle": "We create dynamic, user-friendly websites with intuitive UI/UX designs that enhance user experiences and drive business success.",
+    "description": "Our website design and development service builds a clean, easy-to-use website that highlights your business and attracts customers. With a simple design and smooth functionality, your site will help you connect with visitors and grow your business.",
+    "img": {
+      "src": "/images/Custom Web Design.png",
+      "alt": "Hero image of a window coverings shop website."
+    },
     "features": [
       {
         "id": 0,
@@ -48,6 +53,11 @@
     "title": "Hosting & Domain Setup",
     "pageUrl": "/hosting-and-domain-setup",
     "subTitle": "Simplifies the process of registering, transferring, and managing domain names with options for DNS configuration and renewal reminders.",
+    "description": "Our domain setup service ensures your business gets a professional, secure, and easy-to-find online address without the hassle of managing technical details. A well-chosen domain boosts your credibility, improves customer access, and sets the foundation for your online success.",
+    "img": {
+      "src": "/images/Hosting & Domain Setup.png",
+      "alt": "Hosting & Domain"
+    },
     "features": [
       {
         "id": 0,
@@ -92,6 +102,11 @@
     "title": "SEO Optimization",
     "pageUrl": "/seo-optimization",
     "subTitle": "Boost your website's search engine visibility with proven strategies that drive organic traffic and help your target audience find you easily.",
+    "description": "Our SEO optimization service helps your business rank higher on search engines, making it easier for customers to find you online. By driving more traffic to your website, you'll gain increased visibility, attract potential customers, and grow your business effectively.",
+    "img": {
+      "src": "/images/SEO Optimization.png",
+      "alt": "SEO Optimization"
+    },
     "features": [
       {
         "id": 0,
@@ -136,6 +151,11 @@
     "title": "Analytics Integration",
     "pageUrl": "/analytics-integration",
     "subTitle": "Gain valuable insights into your website's performance and user behavior with advanced analytics tools, enabling data-driven decisions for improvement.",
+    "description": "Our analytics integration service helps you understand how customers interact with your website so you can make smarter decisions for your business. By tracking what works and what doesn't, you can improve your website and attract more visitors.",
+    "img": {
+      "src": "/images/Google Analytics.png",
+      "alt": "Google Analytics"
+    },
     "features": [
       {
         "id": 0,
@@ -180,6 +200,11 @@
     "title": "E-commerce Functionality",
     "pageUrl": "/ecommerce-functionality",
     "subTitle": "Deliver seamless, secure, and user-friendly e-commerce experiences with tools to manage products, process transactions, and enhance customer satisfaction.",
+    "description": "Our e-commerce integration service helps you set up an online store where customers can easily browse and buy your products. It allows you to reach more customers, sell anytime, and grow your business without needing a physical store.",
+    "img": {
+      "src": "/images/Ecommerce.png",
+      "alt": "Ecommerce Product"
+    },
     "features": [
       {
         "id": 0,
@@ -224,6 +249,11 @@
     "title": "Maintenance Support",
     "pageUrl": "/maintenance-support",
     "subTitle": "Ensure your website remains secure, updated, and aligned with your business goals through regular maintenance and expert support for optimal performance and user experience.",
+    "description": "Our maintenance service keeps your website running smoothly and up to date, so you don’t have to worry about technical issues. It ensures your site stays secure, works properly, and continues to give your customers a great experience.",
+    "img": {
+      "src": "/images/Maintenance Support.png",
+      "alt": "Maintenance"
+    },
     "features": [
       {
         "id": 0,

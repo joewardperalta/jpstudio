@@ -10,12 +10,14 @@ import ProcessCard from "@/components/ProcessCard";
 import Link from "next/link";
 import QuestionAndAnswerCard from "@/components/QuestionAndAnswerCard";
 import CallToAction from "@/components/CallToAction";
+import ServiceSection from "@/components/ServiceSection";
 
 // JSON Data
 import projects from "@/data/projects.json";
 import testimonials from "@/data/testimonials.json";
 import processes from "@/data/processes.json";
 import faqs from "@/data/faqs.json";
+import services from "@/data/services.json";
 
 export default function Home() {
   return (
@@ -48,228 +50,27 @@ export default function Home() {
         </Wrapper>
       </section>
 
-      {/* Custom Web Design & Development Section */}
-      <section id="custom-web-design-and-development-section">
-        <Wrapper>
-          <div className="flex items-center justify-between gap-50">
-            {/* Description */}
-            <div className="max-w-[34.25rem]">
-              <SectionHeading className="mb-8">
-                Custom Web Design & Development
-              </SectionHeading>
-              <p className="mb-10 text-base text-gray">
-                Our website design and development service builds a clean,
-                easy-to-use website that highlights your business and attracts
-                customers. With a simple design and smooth functionality, your
-                site will help you connect with visitors and grow your business.
-              </p>
+      {/* Sections of services */}
+      {services.map((service, index) => {
+        // Background colors
+        const bgColors = [
+          "bg-white",
+          "bg-lightBlue",
+          "bg-white",
+          "bg-lightPurple",
+          "bg-white",
+          "bg-lightYellow",
+        ];
 
-              {/* CTA buttons */}
-              <div className="space-x-8">
-                <PrimaryButton className="bg-black text-white">
-                  <Link href="/proposal">Get Started</Link>
-                </PrimaryButton>
-              </div>
-            </div>
-
-            {/* Service Image */}
-            <div className="h-[700px] overflow-hidden rounded-[2rem]">
-              <Image
-                className="h-full w-full object-cover"
-                src="/images/Custom Web Design.png"
-                width={1809}
-                height={1400}
-                alt="Hero image of a window coverings shop website"
-              />
-            </div>
-          </div>
-        </Wrapper>
-      </section>
-
-      {/* Hosting & Domain Setup Section */}
-      <section className="bg-lightBlue" id="hosting-and-domain-setup-section">
-        <Wrapper>
-          <div className="flex items-center justify-between gap-50">
-            {/* Description */}
-            <div className="max-w-[34.25rem]">
-              <SectionHeading className="mb-8">
-                Hosting & Domain Setup
-              </SectionHeading>
-              <p className="mb-10 text-base text-gray">
-                Our domain setup service ensures your business gets a
-                professional, secure, and easy-to-find online address without
-                the hassle of managing technical details. A well-chosen domain
-                boosts your credibility, improves customer access, and sets the
-                foundation for your online success.
-              </p>
-
-              {/* CTA buttons */}
-              <div className="space-x-8">
-                <PrimaryButton className="bg-black text-white">
-                  <Link href="/proposal">Get Started</Link>
-                </PrimaryButton>
-              </div>
-            </div>
-
-            {/* Service Image */}
-            <div className="h-[700px] overflow-hidden rounded-[2rem]">
-              <Image
-                className="h-full w-full object-cover"
-                src="/images/Hosting & Domain Setup.png"
-                width={1809}
-                height={1400}
-                alt="Hosting & Domain"
-              />
-            </div>
-          </div>
-        </Wrapper>
-      </section>
-
-      {/* SEO Optimization Section */}
-      <section id="seo-optimization-section">
-        <Wrapper>
-          <div className="flex items-center justify-between gap-50">
-            <div className="max-w-[34.25rem]">
-              {/* Description */}
-              <SectionHeading className="mb-8">SEO Optimization</SectionHeading>
-              <p className="mb-10 text-base text-gray">
-                Our SEO optimization service helps your business rank higher on
-                search engines, making it easier for customers to find you
-                online. By driving more traffic to your website, you&apos;ll
-                gain increased visibility, attract potential customers, and grow
-                your business effectively.
-              </p>
-
-              {/* CTA buttons */}
-              <div className="space-x-8">
-                <PrimaryButton className="bg-black text-white">
-                  <Link href="/proposal">Get Started</Link>
-                </PrimaryButton>
-              </div>
-            </div>
-
-            {/* Service Image */}
-            <div className="h-[700px] overflow-hidden rounded-[2rem]">
-              <Image
-                className="h-full w-full object-cover"
-                src="/images/SEO Optimization.png"
-                width={1809}
-                height={1400}
-                alt="SEO Optimization"
-              />
-            </div>
-          </div>
-        </Wrapper>
-      </section>
-
-      {/* Analytics Integration Section */}
-      <section className="bg-lightPurple" id="analytics-integration-section">
-        <Wrapper>
-          <div className="flex items-center justify-between gap-50">
-            {/* Description */}
-            <div className="max-w-[34.25rem]">
-              <SectionHeading className="mb-8">
-                Analytics Integration
-              </SectionHeading>
-              <p className="mb-10 text-base text-gray">
-                Our analytics integration service helps you understand how
-                customers interact with your website so you can make smarter
-                decisions for your business. By tracking what works and what
-                doesn&apos;t, you can improve your website and attract more
-                visitors.
-              </p>
-              <div className="space-x-8">
-                <PrimaryButton className="bg-black text-white">
-                  <Link href="/proposal">Get Started</Link>
-                </PrimaryButton>
-              </div>
-            </div>
-
-            {/* Service Image */}
-            <div className="h-[700px] overflow-hidden rounded-[2rem]">
-              <Image
-                className="h-full w-full object-cover"
-                src="/images/Google Analytics.png"
-                width={1809}
-                height={1400}
-                alt="Google Analytics"
-              />
-            </div>
-          </div>
-        </Wrapper>
-      </section>
-
-      {/* E-commerce Functionality Section */}
-      <section id="ecommerce-functionality-section">
-        <Wrapper>
-          <div className="flex items-center justify-between gap-50">
-            {/* Description */}
-            <div className="max-w-[34.25rem]">
-              <SectionHeading className="mb-8">
-                E-commerce Functionality
-              </SectionHeading>
-              <p className="mb-10 text-base text-gray">
-                Our e-commerce integration service helps you set up an online
-                store where customers can easily browse and buy your products.
-                It allows you to reach more customers, sell anytime, and grow
-                your business without needing a physical store.
-              </p>
-              <div className="space-x-8">
-                <PrimaryButton className="bg-black text-white">
-                  <Link href="/proposal">Get Started</Link>
-                </PrimaryButton>
-              </div>
-            </div>
-
-            {/* Service Image */}
-            <div className="h-[700px] overflow-hidden rounded-[2rem]">
-              <Image
-                className="h-full w-full object-cover"
-                src="/images/Ecommerce.png"
-                width={1809}
-                height={1400}
-                alt="Ecommerce Product"
-              />
-            </div>
-          </div>
-        </Wrapper>
-      </section>
-
-      {/* Maintenance Support Section */}
-      <section className="bg-lightYellow" id="maintenance-support-section">
-        <Wrapper>
-          <div className="flex items-center justify-between gap-50">
-            {/* Description */}
-            <div className="max-w-[34.25rem]">
-              <SectionHeading className="mb-8">
-                Maintenance Support
-              </SectionHeading>
-              <p className="mb-10 text-base text-gray">
-                Our maintenance service keeps your website running smoothly and
-                up to date, so you don’t have to worry about technical issues.
-                It ensures your site stays secure, works properly, and continues
-                to give your customers a great experience.
-              </p>
-              <div className="space-x-8">
-                <PrimaryButton className="bg-black text-white">
-                  <Link href="/proposal">Get Started</Link>
-                </PrimaryButton>
-              </div>
-            </div>
-
-            {/* Service Image */}
-            <div className="h-[700px] overflow-hidden rounded-[2rem]">
-              <Image
-                className="h-full w-full object-cover"
-                src="/images/Maintenance Support.png"
-                width={1809}
-                height={1400}
-                alt="Maintenance"
-              />
-            </div>
-          </div>
-        </Wrapper>
-      </section>
+        return (
+          <ServiceSection
+            className={bgColors[index]}
+            title={service.title}
+            description={service.description}
+            img={service.img}
+          />
+        );
+      })}
 
       {/* Projects Section */}
       <section id="projects-section">
