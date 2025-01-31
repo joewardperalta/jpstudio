@@ -123,9 +123,9 @@ export default function Home() {
 
       {/* Team section */}
       <section className="bg-lightGreen" id="team-section">
-        <div className="mx-auto flex items-center justify-between gap-[12.5rem] pl-[4.5rem]">
+        <div className="laptop:flex-row laptop:pl-[4.5rem] laptop:items-center mx-auto flex flex-col-reverse gap-8 tablet:gap-20 desktop:gap-[12.5rem]">
           {/* Brief description of the team */}
-          <div className="w-full max-w-[42rem]">
+          <div className="w-full max-w-[42rem] px-6 pb-20 desktop:pb-0">
             <SectionHeading className="mb-8">
               Meet the team behind your success
             </SectionHeading>
