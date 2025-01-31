@@ -25,7 +25,7 @@ export default function Home() {
       {/* Hero Section */}
       <section className="bg-black" id="hero-section">
         <Wrapper>
-          <div className="laptop:my-[4rem] mx-auto my-[2.5rem] max-w-[81rem] tablet:my-[3.7rem] desktop:my-[4.875rem]">
+          <div className="laptop:mb-[3rem] mx-auto mb-[2.5rem] max-w-[81rem] tablet:mb-[3.7rem] desktop:my-[4.875rem]">
             <Title className="text-center text-white">
               We build modern and professional website for your business
             </Title>
