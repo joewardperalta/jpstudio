@@ -3,7 +3,12 @@ import Image from "next/image";
 import SecondaryButton from "./buttons/SecondaryButton";
 import { useRef } from "react";
 
-export default function TestimonialCard({ author, avatar, message, className }) {
+export default function TestimonialCard({
+  author,
+  avatar,
+  message,
+  className,
+}) {
   const messageBoxRef = useRef(null);
   const readMoreButtonRef = useRef(null);
 
@@ -29,10 +34,10 @@ export default function TestimonialCard({ author, avatar, message, className }) 
 
   return (
     <div className={`testimonial-card ${className}`}>
-      <div className="flex gap-5 mb-[2.1875rem]">
+      <div className="mb-[2.1875rem] flex gap-5">
         {/* Avatar */}
         <Image
-          className="rounded-full bg-gray"
+          className="rounded-full"
           src={avatar.src}
           width={56}
           height={56}
@@ -41,7 +46,7 @@ export default function TestimonialCard({ author, avatar, message, className }) 
 
         {/* Name & Role */}
         <div>
-          <h3 className="text-[1.125rem] leading-[1.5] font-medium">
+          <h3 className="text-[1.125rem] font-medium leading-[1.5]">
             {author}
           </h3>
           <p className="text-[1rem]">Freelance Consultant</p>
@@ -49,7 +54,10 @@ export default function TestimonialCard({ author, avatar, message, className }) 
       </div>
 
       {/* Message */}
-      <p className="mb-[2.1875rem] line-clamp-4" ref={messageBoxRef}>
+      <p
+        className="mb-[2.1875rem] line-clamp-4 whitespace-normal"
+        ref={messageBoxRef}
+      >
         {message}
       </p>
 

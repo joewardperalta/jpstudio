@@ -106,9 +106,10 @@ export default function Home() {
             </SectionHeading>
 
             {/* Testimonials */}
-            <div className="flex justify-center gap-11">
+            <div className="space-x-11 overflow-scroll whitespace-nowrap">
               {testimonials.map((testimonial) => (
                 <TestimonialCard
+                  className="inline-block"
                   key={testimonial.id}
                   author={testimonial.author}
                   avatar={testimonial.avatar}
