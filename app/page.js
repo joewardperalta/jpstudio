@@ -107,7 +107,7 @@ export default function Home() {
             </SectionHeading>
 
             {/* Testimonials */}
-            <div className="laptop:px-17 flex gap-11 overflow-x-auto px-6">
+            <div className="laptop:px-17 space-x-11 overflow-x-auto whitespace-nowrap px-6">
               {testimonials.map((testimonial) => (
                 <TestimonialCard
                   className="inline-block"
@@ -162,9 +162,10 @@ export default function Home() {
         </SectionHeading>
 
         {/* List of the process for building a website */}
-        <div className="laptop:px-17 flex gap-11 overflow-x-auto px-6">
+        <div className="laptop:px-17 space-x-11 overflow-x-auto whitespace-nowrap px-6">
           {processes.map((process) => (
             <ProcessCard
+              className="inline-block"
               key={process.id}
               img={process.img}
               title={process.title}

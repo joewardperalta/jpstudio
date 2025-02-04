@@ -35,7 +35,7 @@
   }
 
   .process-card {
-    @apply min-w-[39.75rem];
+    @apply h-full w-full tablet:min-w-[37.5rem] tablet:max-w-[37.5rem];
   }
 
   .project-card {
@@ -63,7 +63,7 @@
   }
 
   .testimonial-card {
-    @apply inline-block h-fit w-full min-w-[37.5rem] rounded-[4rem] border border-lightGray px-17 py-30;
+    @apply inline-block h-fit w-full rounded-[4rem] border border-lightGray px-17 py-30 tablet:min-w-[37.5rem] tablet:max-w-[37.5rem];
   }
 
   .wrapper {
