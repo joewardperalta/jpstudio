@@ -55,7 +55,7 @@ export default function TestimonialCard({
 
       {/* Message */}
       <p
-        className="mb-[2.1875rem] line-clamp-4 whitespace-normal"
+        className="mb-[2.1875rem] line-clamp-4 whitespace-normal leading-[1.7]"
         ref={messageBoxRef}
       >
         {message}
