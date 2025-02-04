@@ -13,8 +13,7 @@
   }
 
   p {
-    line-height: 1.7;
-    font-size: 1.25rem;
+    @apply 1rem laptop:text-[1.25rem] leading-[1.2] tablet:text-[1.125rem];
   }
 }
 
