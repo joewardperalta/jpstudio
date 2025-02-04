@@ -80,7 +80,7 @@ export default function Home() {
           </div>
 
           {/* Project list */}
-          <div className="laptop:px-17 flex gap-11 overflow-x-auto px-6">
+          <div className="laptop:px-17 space-x-11 overflow-x-auto whitespace-nowrap px-6">
             {projects.map((project) => (
               <ProjectCard
                 className="inline-block"
