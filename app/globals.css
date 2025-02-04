@@ -63,7 +63,7 @@
   }
 
   .testimonial-card {
-    @apply inline-block h-fit w-full rounded-[4rem] border border-lightGray px-17 py-30 tablet:min-w-[37.5rem] tablet:max-w-[37.5rem];
+    @apply inline-block h-fit w-full rounded-[4rem] border border-lightGray px-17 py-30 leading-[1.7] tablet:min-w-[37.5rem] tablet:max-w-[37.5rem];
   }
 
   .wrapper {
