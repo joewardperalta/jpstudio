@@ -13,9 +13,10 @@ export default function page() {
           <Title className="mb-30 text-center">Latest Projects</Title>
 
           {/* List of projects */}
-          <div className="flex gap-20">
+          <div className="laptop:flex-row flex flex-col gap-20">
             {projects.map((project) => (
               <ProjectCard
+                className="tablet:min-w-min tablet:max-w-max"
                 key={project.id}
                 img={project.coverImg}
                 name={project.name}
