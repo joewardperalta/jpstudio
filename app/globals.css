@@ -39,7 +39,7 @@
   }
 
   .project-card {
-    @apply tablet:min-w-[37.5rem] tablet:max-w-[37.5rem];
+    @apply h-full w-full tablet:min-w-[37.5rem] tablet:max-w-[37.5rem];
   }
 
   .question-and-answer-card {
