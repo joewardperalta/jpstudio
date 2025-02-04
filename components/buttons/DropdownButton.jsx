@@ -1,5 +1,4 @@
 "use client";
-import Link from "next/link";
 import { useRef } from "react";
 import Image from "next/image";
 
@@ -30,13 +29,13 @@ export default function DropdownButton({ title, items = [], className }) {
         ref={itemsRef}
       >
         {items.map((item) => (
-          <Link
+          <a
             key={item.id}
             className="block text-nowrap text-left"
             href={item.pageUrl}
           >
             {item.title}
-          </Link>
+          </a>
         ))}
       </div>
     </button>

@@ -1,7 +1,6 @@
 "use client";
 
 import Image from "next/image";
-import Link from "next/link";
 import PrimaryButton from "./buttons/PrimaryButton";
 import DropdownButton from "./buttons/DropdownButton";
 import { useRef } from "react";
@@ -28,7 +27,7 @@ export default function Nav({ className }) {
   return (
     <div className={`nav ${className}`}>
       {/* Logo */}
-      <Link className="z-10" href="/">
+      <a className="z-10" href="/">
         <Image
           className="h-auto w-[7.875rem] tablet:w-[9.3125rem] desktop:w-52"
           src="/images/jpstudio logo white.png"
@@ -36,7 +35,7 @@ export default function Nav({ className }) {
           width={149}
           height={36}
         />
-      </Link>
+      </a>
 
       {/* Nav */}
       <nav
@@ -45,31 +44,31 @@ export default function Nav({ className }) {
       >
         <ul className="mx-auto flex w-fit flex-col gap-[4.5rem] text-[1rem] desktop:flex-row desktop:items-center">
           <li>
-            <Link href="/work">Work</Link>
+            <a href="/work">Work</a>
           </li>
           <li>
             <DropdownButton title="Services" items={services} />
           </li>
           <li>
-            <Link href="/agency">Agency</Link>
+            <a href="/agency">Agency</a>
           </li>
           <li>
-            <Link href="/proposal" className="hidden desktop:block">
+            <a href="/proposal" className="hidden desktop:block">
               <PrimaryButton className="bg-primary px-10 tablet:text-sm">
                 Get Started
               </PrimaryButton>
-            </Link>
+            </a>
           </li>
         </ul>
       </nav>
 
       <div className="flex items-center gap-5 tablet:gap-9 desktop:hidden">
         {/* CTA */}
-        <Link href="/proposal" className="z-10">
+        <a href="/proposal" className="z-10">
           <PrimaryButton className="bg-primary px-4 py-2 tablet:px-10 tablet:py-4 tablet:text-sm">
             Get Started
           </PrimaryButton>
-        </Link>
+        </a>
 
         {/* Hamburger Button */}
         <HamburgerButton

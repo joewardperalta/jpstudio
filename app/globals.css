@@ -59,7 +59,7 @@
   }
 
   .sub-title {
-    @apply mx-auto max-w-[62.25rem] text-[2rem] leading-[1.5];
+    @apply laptop:text-[2rem] mx-auto max-w-[62.25rem] text-[1.5rem] leading-[1.5];
   }
 
   .testimonial-card {
