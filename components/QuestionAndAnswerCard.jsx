@@ -25,7 +25,10 @@ export default function QuestionAndAnswerCard({ question, answer, className }) {
         </button>
       </div>
 
-      <p className="h-0 overflow-hidden" ref={paragraphAnswerRef}>
+      <p
+        className="laptop:text-[1.25rem] h-0 overflow-hidden text-base"
+        ref={paragraphAnswerRef}
+      >
         {answer}
       </p>
     </div>
