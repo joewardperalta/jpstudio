@@ -188,6 +188,7 @@ export default function Home() {
           <div className="mx-auto max-w-[75rem]">
             {faqs.map((faq) => (
               <QuestionAndAnswerCard
+                className=""
                 key={faq.id}
                 question={faq.question}
                 answer={faq.answer}

@@ -14,7 +14,7 @@ export default function QuestionAndAnswerCard({ question, answer, className }) {
   return (
     <div className={`question-and-answer-card ${className}`}>
       <div className="flex justify-between gap-8">
-        <p className="text-[2rem]">{question}</p>
+        <p className="laptop:text-[2rem] text-[1.5rem]">{question}</p>
         <button onClick={toggle}>
           <Image
             src="/icons/plus_icon.png"
