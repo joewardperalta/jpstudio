@@ -15,7 +15,7 @@ export default function ProcessCard({ img, title, description, className }) {
       </div>
 
       {/* Title */}
-      <h3 className="mb-2 text-[2rem]">{title}</h3>
+      <h3 className="mb-2 text-subHeading">{title}</h3>
 
       {/* Brief description */}
       <p className="text-base leading-[1.7] text-gray">{description}</p>
