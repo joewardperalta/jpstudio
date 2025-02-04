@@ -74,15 +74,16 @@ export default function Home() {
 
       {/* Projects Section */}
       <section id="projects-section">
-        <Wrapper>
-          <div>
+        <div className="py-30">
+          <div className="px-17">
             <SectionHeading>Featured Projects</SectionHeading>
           </div>
 
           {/* Project list */}
-          <div className="laptop:gap-14 flex flex-col gap-8 tablet:flex-row desktop:gap-20">
+          <div className="flex gap-11 overflow-x-auto px-17">
             {projects.map((project) => (
               <ProjectCard
+                className="inline-block"
                 key={project.id}
                 img={{
                   src: project.coverImg.src,
@@ -94,19 +95,19 @@ export default function Home() {
               />
             ))}
           </div>
-        </Wrapper>
+        </div>
       </section>
 
       {/* Testimonials section */}
       <section id="testimonial section">
-        <Wrapper>
+        <div className="py-30">
           <div>
             <SectionHeading className="text-center">
               What People Are Saying
             </SectionHeading>
 
             {/* Testimonials */}
-            <div className="space-x-11 overflow-x-scroll whitespace-nowrap">
+            <div className="flex gap-11 overflow-x-auto px-17">
               {testimonials.map((testimonial) => (
                 <TestimonialCard
                   className="inline-block"
@@ -118,7 +119,7 @@ export default function Home() {
               ))}
             </div>
           </div>
-        </Wrapper>
+        </div>
       </section>
 
       {/* Team section */}
@@ -161,7 +162,7 @@ export default function Home() {
         </SectionHeading>
 
         {/* List of the process for building a website */}
-        <div className="flex gap-11 overflow-x-auto px-17 pb-11">
+        <div className="flex gap-11 overflow-x-auto px-17">
           {processes.map((process) => (
             <ProcessCard
               key={process.id}

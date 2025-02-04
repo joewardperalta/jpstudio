@@ -40,6 +40,7 @@
   }
 
   .project-card {
+    @apply min-w-[37.5rem];
   }
 
   .question-and-answer-card {
@@ -63,7 +64,7 @@
   }
 
   .testimonial-card {
-    @apply inline-block h-fit w-full max-w-[37.5rem] rounded-[4rem] border border-lightGray px-17 py-30;
+    @apply inline-block h-fit w-full min-w-[37.5rem] rounded-[4rem] border border-lightGray px-17 py-30;
   }
 
   .wrapper {
