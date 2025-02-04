@@ -75,12 +75,12 @@ export default function Home() {
       {/* Projects Section */}
       <section id="projects-section">
         <div className="py-30">
-          <div className="px-17">
+          <div className="laptop:px-17 px-6">
             <SectionHeading>Featured Projects</SectionHeading>
           </div>
 
           {/* Project list */}
-          <div className="flex gap-11 overflow-x-auto px-17">
+          <div className="laptop:px-17 flex gap-11 overflow-x-auto px-6">
             {projects.map((project) => (
               <ProjectCard
                 className="inline-block"
@@ -107,7 +107,7 @@ export default function Home() {
             </SectionHeading>
 
             {/* Testimonials */}
-            <div className="flex gap-11 overflow-x-auto px-17">
+            <div className="laptop:px-17 flex gap-11 overflow-x-auto px-6">
               {testimonials.map((testimonial) => (
                 <TestimonialCard
                   className="inline-block"
@@ -157,12 +157,12 @@ export default function Home() {
       </section>
 
       <section className="py-30" id="process-section">
-        <SectionHeading className="max-w-[51.125rem] pl-17">
+        <SectionHeading className="laptop:px-17 max-w-[51.125rem] px-6">
           The comprehensive process for building your website
         </SectionHeading>
 
         {/* List of the process for building a website */}
-        <div className="flex gap-11 overflow-x-auto px-17">
+        <div className="laptop:px-17 flex gap-11 overflow-x-auto px-6">
           {processes.map((process) => (
             <ProcessCard
               key={process.id}
