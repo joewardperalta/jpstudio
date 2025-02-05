@@ -32,7 +32,7 @@ export default function ServiceSection({ title, description, img, className }) {
           </div>
 
           {/* Service Image */}
-          <div className="h-auto overflow-hidden rounded-[2rem] desktop:h-[700px]">
+          <div className="h-auto overflow-hidden rounded-xl tablet:rounded-5xl desktop:h-[700px]">
             <Image
               className="h-full w-full object-cover object-top"
               src={img.src}
