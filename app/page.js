@@ -25,7 +25,7 @@ export default function Home() {
       {/* Hero Section */}
       <section className="bg-black" id="hero-section">
         <Wrapper>
-          <div className="laptop:mb-[3rem] mx-auto mb-[2.5rem] max-w-[81rem] tablet:mb-[3.7rem] desktop:my-[4.875rem]">
+          <div className="mx-auto mb-[2.5rem] max-w-[81rem] tablet:mb-[3.7rem] laptop:mb-[3rem] desktop:my-[4.875rem]">
             <Title className="text-center text-white">
               We build modern and professional website for your business
             </Title>
@@ -39,7 +39,7 @@ export default function Home() {
           </div>
           <div>
             <Image
-              className="rounded-2xl tablet:rounded-5xl"
+              className="rounded-xl tablet:rounded-5xl"
               src="/images/comfort-sofa.jpg"
               width={3840}
               height={2160}
@@ -64,6 +64,7 @@ export default function Home() {
 
         return (
           <ServiceSection
+            key={service.id}
             className={bgColors[index]}
             title={service.title}
             description={service.description}
@@ -75,12 +76,12 @@ export default function Home() {
       {/* Projects Section */}
       <section id="projects-section">
         <div className="py-30">
-          <div className="laptop:px-17 px-6">
+          <div className="px-6 laptop:px-17">
             <SectionHeading>Featured Projects</SectionHeading>
           </div>
 
           {/* Project list */}
-          <div className="laptop:px-17 space-x-11 overflow-x-auto whitespace-nowrap px-6">
+          <div className="space-x-11 overflow-x-auto whitespace-nowrap px-6 laptop:px-17">
             {projects.map((project) => (
               <ProjectCard
                 className="inline-block"
@@ -107,7 +108,7 @@ export default function Home() {
             </SectionHeading>
 
             {/* Testimonials */}
-            <div className="laptop:px-17 space-x-11 overflow-x-auto whitespace-nowrap px-6">
+            <div className="space-x-11 overflow-x-auto whitespace-nowrap px-6 laptop:px-17">
               {testimonials.map((testimonial) => (
                 <TestimonialCard
                   className="inline-block"
@@ -124,7 +125,7 @@ export default function Home() {
 
       {/* Team section */}
       <section className="bg-lightGreen" id="team-section">
-        <div className="laptop:flex-row laptop:pl-[4.5rem] laptop:items-center mx-auto flex flex-col-reverse gap-8 tablet:gap-20 desktop:gap-[12.5rem]">
+        <div className="mx-auto flex flex-col-reverse gap-8 tablet:gap-20 laptop:flex-row laptop:items-center laptop:pl-[4.5rem] desktop:gap-[12.5rem]">
           {/* Brief description of the team */}
           <div className="w-full max-w-[42rem] px-6 pb-20 desktop:pb-0">
             <SectionHeading className="mb-8">
@@ -157,12 +158,12 @@ export default function Home() {
       </section>
 
       <section className="py-30" id="process-section">
-        <SectionHeading className="laptop:px-17 max-w-[51.125rem] px-6">
+        <SectionHeading className="max-w-[51.125rem] px-6 laptop:px-17">
           The comprehensive process for building your website
         </SectionHeading>
 
         {/* List of the process for building a website */}
-        <div className="laptop:px-17 space-x-11 overflow-x-auto whitespace-nowrap px-6">
+        <div className="space-x-11 overflow-x-auto whitespace-nowrap px-6 laptop:px-17">
           {processes.map((process) => (
             <ProcessCard
               className="inline-block"
