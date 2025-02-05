@@ -75,7 +75,7 @@ export default function Home() {
 
       {/* Projects Section */}
       <section id="projects-section">
-        <div className="py-30">
+        <Wrapper className="px-0">
           <div className="px-6 laptop:px-17">
             <SectionHeading>Featured Projects</SectionHeading>
           </div>
@@ -96,12 +96,12 @@ export default function Home() {
               />
             ))}
           </div>
-        </div>
+        </Wrapper>
       </section>
 
       {/* Testimonials section */}
       <section id="testimonial section">
-        <div className="py-30">
+        <Wrapper className="px-0">
           <div>
             <SectionHeading className="text-center">
               What People Are Saying
@@ -120,7 +120,7 @@ export default function Home() {
               ))}
             </div>
           </div>
-        </div>
+        </Wrapper>
       </section>
 
       {/* Team section */}
