@@ -9,7 +9,7 @@ export default function CallToAction({ text }) {
     <section className="bg-lightPurple">
       <Wrapper>
         <div className="mx-auto max-w-[67.25rem]">
-          <SectionHeading className="laptop:text-[5.75rem] text-center text-[3rem] tablet:text-[5rem]">
+          <SectionHeading className="text-center text-[2rem] tablet:text-[5rem] laptop:text-[5.75rem]">
             {text}
           </SectionHeading>
 
