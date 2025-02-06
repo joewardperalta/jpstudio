@@ -46,10 +46,12 @@ export default function TestimonialCard({
 
         {/* Name & Role */}
         <div>
-          <h3 className="text-[1.125rem] font-medium leading-[1.5]">
+          <h3 className="text-[1rem] font-medium leading-[1.5] tablet:text-[1.125rem]">
             {author}
           </h3>
-          <p className="text-[1rem]">Freelance Consultant</p>
+          <p className="text-[.8rem] tablet:text-[1rem]">
+            Freelance Consultant
+          </p>
         </div>
       </div>
 
