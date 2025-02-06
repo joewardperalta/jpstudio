@@ -1,4 +1,5 @@
 import Image from "next/image";
+import SubHeading from "./SubHeading";
 
 export default function ProcessCard({ img, title, description, className }) {
   return (
@@ -15,10 +16,10 @@ export default function ProcessCard({ img, title, description, className }) {
       </div>
 
       {/* Title */}
-      <h3 className="mb-2 text-subHeading">{title}</h3>
+      <SubHeading className="tablet:mb-2">{title}</SubHeading>
 
       {/* Brief description */}
-      <p className="w-full whitespace-pre-wrap text-base leading-[1.7]">
+      <p className="w-full whitespace-pre-wrap text-sm leading-[1.7] text-gray tablet:text-base">
         {description}
       </p>
     </div>
