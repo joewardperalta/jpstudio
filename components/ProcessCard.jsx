@@ -5,9 +5,9 @@ export default function ProcessCard({ img, title, description, className }) {
   return (
     <div className={`process-card ${className}`}>
       {/* Cover image */}
-      <div className="mb-4 overflow-hidden rounded-4xl">
+      <div className="mb-4 overflow-hidden rounded-xl tablet:rounded-4xl">
         <Image
-          className="h-[38.9375rem] w-full object-cover"
+          className="w-full object-cover tablet:h-[38.9375rem]"
           src={img.src}
           alt={img.alt}
           width={2000}
