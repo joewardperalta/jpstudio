@@ -40,9 +40,9 @@ export default function page() {
         <div className="mx-auto max-w-[90rem]">
           <Wrapper>
             {/* Mission */}
-            <div className="flex justify-between gap-20 border-b border-black py-17">
+            <div className="flex flex-col justify-between border-b border-black py-17 laptop:flex-row laptop:gap-20">
               <SectionHeading className="w-full">Mission</SectionHeading>
-              <p className="w-full text-2xl leading-[1.7]">
+              <p className="w-full text-xl leading-[1.7] tablet:text-2xl">
                 Our mission is to create impactful web designs that drive
                 growth, enhance brand presence, and foster meaningful
                 connections with your customers.
@@ -50,9 +50,9 @@ export default function page() {
             </div>
 
             {/* Vision */}
-            <div className="flex justify-between gap-20 py-17">
+            <div className="flex flex-col justify-between py-17 laptop:flex-row laptop:gap-20">
               <SectionHeading className="w-full">Vision</SectionHeading>
-              <p className="w-full text-2xl leading-[1.7]">
+              <p className="w-full text-xl leading-[1.7] tablet:text-2xl">
                 To be the trusted partner for businesses, empowering them to
                 achieve their goals through innovative and user-centric web
                 solutions.
