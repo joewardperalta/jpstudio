@@ -21,7 +21,7 @@ export default function CheckBox({ id, name, value }) {
         value={value}
       />
       <label
-        className="inline-block cursor-pointer px-10 py-4 text-2xl leading-[1.7]"
+        className="inline-block cursor-pointer px-10 py-4 text-xl leading-[1.7] tablet:text-2xl"
         htmlFor={id}
         onClick={select}
         ref={labelRef}

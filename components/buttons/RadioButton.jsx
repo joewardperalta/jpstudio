@@ -32,7 +32,7 @@ export default function RadioButton({ id, name, value }) {
         value={value}
       />
       <label
-        className={`inline-block cursor-pointer px-10 py-4 text-2xl leading-[1.7] ${"label-" + name}`}
+        className={`inline-block cursor-pointer px-10 py-4 text-xl leading-[1.7] tablet:text-2xl ${"label-" + name}`}
         htmlFor={id}
         onClick={select}
         ref={labelRef}
