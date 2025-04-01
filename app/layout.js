@@ -26,7 +26,7 @@ export default function RootLayout({ children }) {
 
         {/* Footer section */}
         <footer>
-          <div className="laptop:px-17 laptop:py-30 mx-auto max-w-[90rem] px-6 pb-17">
+          <div className="mx-auto max-w-[90rem] px-6 py-17 laptop:px-17 laptop:py-30">
             {/* Logo */}
             <Image
               className="mb-[3.25rem]"
@@ -37,7 +37,7 @@ export default function RootLayout({ children }) {
             />
 
             {/* Footer links */}
-            <div className="laptop:flex-row flex flex-col justify-between gap-[3rem] text-sm leading-[1.5] desktop:gap-[7.1875rem]">
+            <div className="flex flex-col justify-between gap-[3rem] text-sm leading-[1.5] laptop:flex-row desktop:gap-[7.1875rem]">
               {/* Navigation links */}
               <div>
                 <h6 className="mb-6 text-sm font-medium leading-[1.5]">
@@ -144,7 +144,7 @@ export default function RootLayout({ children }) {
 
           {/* Copywrite and legal documents */}
           <div className="mb-4 w-full border-t py-5">
-            <div className="laptop:px-17 mx-auto flex w-full max-w-[90rem] justify-between gap-10 px-6">
+            <div className="mx-auto flex w-full max-w-[90rem] justify-between gap-10 px-6 laptop:px-17">
               <p className="text-xs leading-[1.5] tablet:text-sm">
                 © 2024 JPStudio Web Design Agency
               </p>
