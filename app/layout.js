@@ -5,6 +5,9 @@ import Image from "next/image";
 import Link from "next/link";
 import Nav from "@/components/Nav";
 
+// Vercel analytics tool
+import { Analytics } from "@vercel/analytics/react";
+
 const raleway = Raleway({
   subsets: ["latin"],
 });
@@ -162,6 +165,9 @@ export default function RootLayout({ children }) {
             </div>
           </div>
         </footer>
+
+        {/* Vercel analytics component */}
+        <Analytics />
 
         <Script src="https://kit.fontawesome.com/d924478ec2.js" />
       </body>
