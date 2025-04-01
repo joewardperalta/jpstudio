@@ -110,9 +110,10 @@ export default function ServicePage({
           </SectionHeading>
 
           {/* Testimonials */}
-          <div className="flex gap-11 overflow-x-auto laptop:justify-center">
+          <div className="space-x-11 overflow-x-auto whitespace-nowrap laptop:px-17">
             {testimonials.map((testimonial) => (
               <TestimonialCard
+                className="inline-block"
                 key={testimonial.id}
                 author={testimonial.author}
                 avatar={testimonial.avatar}
