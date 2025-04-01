@@ -97,7 +97,7 @@ export default function page() {
           </SectionHeading>
 
           {/* List of team members */}
-          <div className="flex flex-col gap-16 laptop:flex-row">
+          <div className="flex flex-col gap-8 tablet:flex-row laptop:gap-16">
             {team.map((member) => (
               <div key={member.id} className="">
                 {/* Team member's profile photo */}
