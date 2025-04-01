@@ -13,7 +13,7 @@ export default function page() {
           <Title className="mb-30 text-center">Latest Projects</Title>
 
           {/* List of projects */}
-          <div className="laptop:flex-row flex flex-col gap-20">
+          <div className="flex flex-col gap-20 tablet:flex-row">
             {projects.map((project) => (
               <ProjectCard
                 className="tablet:min-w-min tablet:max-w-max"
