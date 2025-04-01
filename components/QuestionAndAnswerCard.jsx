@@ -14,7 +14,9 @@ export default function QuestionAndAnswerCard({ question, answer, className }) {
   return (
     <div className={`question-and-answer-card ${className}`}>
       <div className="flex justify-between gap-8">
-        <p className="laptop:text-[2rem] text-[1.5rem]">{question}</p>
+        <p className="text-[1.3rem] tablet:text-[1.5rem] laptop:text-[2rem]">
+          {question}
+        </p>
         <button onClick={toggle}>
           <Image
             src="/icons/plus_icon.png"
@@ -26,7 +28,7 @@ export default function QuestionAndAnswerCard({ question, answer, className }) {
       </div>
 
       <p
-        className="laptop:text-[1.25rem] h-0 overflow-hidden text-base"
+        className="h-0 overflow-hidden text-base text-gray laptop:text-[1.25rem]"
         ref={paragraphAnswerRef}
       >
         {answer}
