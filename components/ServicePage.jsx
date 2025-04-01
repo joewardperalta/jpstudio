@@ -110,7 +110,7 @@ export default function ServicePage({
           </SectionHeading>
 
           {/* Testimonials */}
-          <div className="flex justify-center gap-11">
+          <div className="flex gap-11 overflow-x-auto laptop:justify-center">
             {testimonials.map((testimonial) => (
               <TestimonialCard
                 key={testimonial.id}
