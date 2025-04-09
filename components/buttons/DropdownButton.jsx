@@ -25,7 +25,7 @@ export default function DropdownButton({ title, items = [], className }) {
 
       {/* Drop down items */}
       <div
-        className="absolute top-8 hidden w-fit space-y-5 rounded-lg bg-white px-8 py-8 text-black"
+        className="absolute -left-full top-8 hidden w-fit space-y-5 rounded-lg bg-white px-8 py-8 text-black laptop:left-0"
         ref={itemsRef}
       >
         {items.map((item) => (
