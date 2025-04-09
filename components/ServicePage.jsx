@@ -29,10 +29,10 @@ export default function ServicePage({
 
       {/* Features section */}
       <section className="bg-lightBlue">
-        <div className="flex">
-          <div className="flex w-full items-center">
+        <div>
+          <div className="flex w-full flex-col-reverse items-center laptop:flex-row">
             {/* Info */}
-            <div className="w-full max-w-[50rem] px-28">
+            <div className="w-full max-w-[50rem] px-6 py-20 laptop:px-28">
               {/* Feature title */}
               <SectionHeading className="mb-[2rem]">
                 {currentActiveFeature.title}
@@ -89,9 +89,9 @@ export default function ServicePage({
             </div>
 
             {/* Feature image */}
-            <div className="h-[881px] w-full">
+            <div className="h-[450px] w-full laptop:h-[881px]">
               <Image
-                className="h-full w-full rounded-l-[2.25rem] object-cover object-left"
+                className="h-full w-full rounded-b-xl object-cover object-left laptop:rounded-l-[2.25rem] laptop:rounded-br-none"
                 src={currentActiveFeature.img.src}
                 alt={currentActiveFeature.img.alt}
                 width={2644}
