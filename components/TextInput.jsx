@@ -1,4 +1,10 @@
-export default function TextInput({ id, name, value, required = false }) {
+export default function TextInput({
+  id,
+  name,
+  value,
+  required = false,
+  onChange,
+}) {
   return (
     <div>
       <label className="mb-4 block text-[2rem] font-medium" htmlFor={name}>
@@ -10,6 +16,7 @@ export default function TextInput({ id, name, value, required = false }) {
         id={id}
         name={name}
         required={required}
+        onChange={onChange}
       />
     </div>
   );

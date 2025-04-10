@@ -2,7 +2,7 @@
 
 import { useRef } from "react";
 
-export default function RadioButton({ id, name, value }) {
+export default function RadioButton({ id, name, value, required = false }) {
   const labelRef = useRef(null);
 
   // Highlight the selected radio button
@@ -30,6 +30,7 @@ export default function RadioButton({ id, name, value }) {
         id={id}
         name={name}
         value={value}
+        required={required}
       />
       <label
         className={`inline-block cursor-pointer px-10 py-4 text-2xl leading-[1.7] ${"label-" + name}`}

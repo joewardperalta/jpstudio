@@ -18,8 +18,15 @@ const sendingStates = {
 };
 
 export default function Page() {
+  // State for email status
   const [sendingStatus, setSendingStatus] = useState(sendingStates.idle);
 
+  // States for the form inputs
+  const [formName, setFormName] = useState();
+  const [formEmail, setFormEmail] = useState();
+  const [formMessage, setFormMessage] = useState();
+
+  // Handle sending the email
   async function sendEmail(event) {
     event.preventDefault();
 
@@ -162,12 +169,14 @@ export default function Page() {
                 name="name"
                 value="Your name"
                 required={true}
+                onChange={(e) => setFormName(e.target.value)}
               />
               <EmailInput
                 id="email"
                 name="email"
                 value="Email"
                 required={true}
+                onChange={(e) => setFormEmail(e.target.value)}
               />
             </div>
 
@@ -183,6 +192,8 @@ export default function Page() {
                 className="borrder-black h-[315px] w-full border-b text-2xl focus-visible:outline-none"
                 id="email-message"
                 name="email-message"
+                required
+                onChange={(e) => setFormMessage(e.target.value)}
               />
             </div>
 
@@ -190,7 +201,8 @@ export default function Page() {
               className="bg-black text-white"
               type="submit"
               onClick={() => {
-                setSendingStatus(sendingStates.sending);
+                if (formName && formEmail && formMessage)
+                  setSendingStatus(sendingStates.sending);
               }}
             >
               {handleSendingStatus()}
