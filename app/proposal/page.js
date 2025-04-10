@@ -8,8 +8,12 @@ import TextInput from "@/components/TextInput";
 import Title from "@/components/Title";
 import Wrapper from "@/components/Wrapper";
 import Form from "next/form";
+import { useRef, useState } from "react";
 
-export default function page() {
+export default function Page() {
+  const primaryButtonRef = useRef(null);
+  const outerContainerSubmitButtonRef = useRef(null);
+
   async function sendEmail(event) {
     event.preventDefault();
 
@@ -24,8 +28,28 @@ export default function page() {
     // Handle response
     const res = response.json();
 
+    res
+      .then(() => {
+        // set the email status to sent
+        handleFormSubmit();
+      })
+      .catch((err) => {
+        // show the error on the screen
+        alert(err);
+      });
+
     // Notify that the email was successfuly sent
-    res.then((data) => alert(data.message));
+    //res.then((data) => alert(data.message));
+  }
+
+  function handleFormSubmit() {
+    // add a text with a check mark that notifies the email was successfully sent
+    const sentSuccessElement = document.createElement("p");
+    sentSuccessElement.innerText = "Email sent!";
+    sentSuccessElement.style.color = "green";
+    sentSuccessElement.style.display = "inline";
+    sentSuccessElement.style.paddingLeft = "1rem";
+    outerContainerSubmitButtonRef.current.appendChild(sentSuccessElement);
   }
 
   return (
@@ -152,9 +176,15 @@ export default function page() {
               />
             </div>
 
-            <PrimaryButton className="bg-black text-white" type="submit">
-              Send
-            </PrimaryButton>
+            <div ref={outerContainerSubmitButtonRef}>
+              <PrimaryButton
+                className="bg-black text-white"
+                type="submit"
+                ref={primaryButtonRef}
+              >
+                Send
+              </PrimaryButton>
+            </div>
           </Form>
         </Wrapper>
       </section>
