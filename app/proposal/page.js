@@ -8,11 +8,17 @@ import TextInput from "@/components/TextInput";
 import Title from "@/components/Title";
 import Wrapper from "@/components/Wrapper";
 import Form from "next/form";
-import { useRef, useState } from "react";
+import { useState } from "react";
+
+const sendingStates = {
+  idle: 0,
+  sending: 1,
+  sent: 2,
+  failed: 3,
+};
 
 export default function Page() {
-  const primaryButtonRef = useRef(null);
-  const outerContainerSubmitButtonRef = useRef(null);
+  const [sendingStatus, setSendingStatus] = useState(sendingStates.idle);
 
   async function sendEmail(event) {
     event.preventDefault();
@@ -31,25 +37,29 @@ export default function Page() {
     res
       .then(() => {
         // set the email status to sent
-        handleFormSubmit();
+        setSendingStatus(sendingStates.sent);
       })
       .catch((err) => {
-        // show the error on the screen
-        alert(err);
+        // show that the email was unsuccessful
+        setSendingStatus(sendingStates.failed);
       });
 
     // Notify that the email was successfuly sent
     //res.then((data) => alert(data.message));
   }
 
-  function handleFormSubmit() {
-    // add a text with a check mark that notifies the email was successfully sent
-    const sentSuccessElement = document.createElement("p");
-    sentSuccessElement.innerText = "Email sent!";
-    sentSuccessElement.style.color = "green";
-    sentSuccessElement.style.display = "inline";
-    sentSuccessElement.style.paddingLeft = "1rem";
-    outerContainerSubmitButtonRef.current.appendChild(sentSuccessElement);
+  // Track the status of an email when form is submitted, then display
+  // the appropriate message
+  function handleSendingStatus() {
+    if (sendingStatus == sendingStates.sending) {
+      return "Sending...";
+    } else if (sendingStatus == sendingStates.sent) {
+      return "Message Sent!";
+    } else if (sendingStatus == sendingStates.failed) {
+      return "Try Again";
+    } else {
+      return "Send";
+    }
   }
 
   return (
@@ -176,15 +186,16 @@ export default function Page() {
               />
             </div>
 
-            <div ref={outerContainerSubmitButtonRef}>
-              <PrimaryButton
-                className="bg-black text-white"
-                type="submit"
-                ref={primaryButtonRef}
-              >
-                Send
-              </PrimaryButton>
-            </div>
+            <PrimaryButton
+              className="bg-black text-white"
+              type="submit"
+              onClick={() => {
+                setSendingStatus(sendingStates.sending);
+              }}
+            >
+              {handleSendingStatus()}
+            </PrimaryButton>
+            <span className="inline-block pl-4"></span>
           </Form>
         </Wrapper>
       </section>
