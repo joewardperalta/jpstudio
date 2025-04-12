@@ -1,3 +1,5 @@
+import { transform } from "next/dist/build/swc/generated-native";
+
 /** @type {import('tailwindcss').Config} */
 export default {
   content: [
@@ -80,6 +82,21 @@ export default {
         desktop: "1440px",
         laptop: "1280px",
         tablet: "744px",
+      },
+
+      animation: {
+        spin: "spin 1s linear infinite",
+      },
+
+      keyframes: {
+        spin: {
+          from: {
+            transform: "rotate(0deg)",
+          },
+          to: {
+            transform: "rotate(360deg)",
+          },
+        },
       },
     },
   },

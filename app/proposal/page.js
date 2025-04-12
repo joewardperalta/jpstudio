@@ -59,9 +59,9 @@ export default function Page() {
   // the appropriate message
   function handleSendingStatus() {
     if (sendingStatus == sendingStates.sending) {
-      return "Sending...";
+      return "Sending";
     } else if (sendingStatus == sendingStates.sent) {
-      return "Message Sent!";
+      return "Sent";
     } else if (sendingStatus == sendingStates.failed) {
       return "Try Again";
     } else {
@@ -198,14 +198,54 @@ export default function Page() {
             </div>
 
             <PrimaryButton
-              className="bg-black text-white"
+              className="flex items-center bg-black text-white"
               type="submit"
               onClick={() => {
-                if (formName && formEmail && formMessage)
+                if (formName && formEmail && formMessage) {
                   setSendingStatus(sendingStates.sending);
+                }
               }}
             >
+              {/* Render loading image */}
+              {sendingStatus == sendingStates.sending && (
+                <svg
+                  width="25"
+                  height="25"
+                  viewBox="0 0 40 40"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  stroke="currentColor"
+                  className="mr-4 animate-spin"
+                >
+                  <circle
+                    cx="20"
+                    cy="20"
+                    r="18"
+                    strokeWidth="4"
+                    strokeOpacity="0.2"
+                  />
+                  <path d="M38 20a18 18 0 0 1-18 18" strokeWidth="4" />
+                </svg>
+              )}
+
               {handleSendingStatus()}
+
+              {sendingStatus == sendingStates.sent && (
+                <svg
+                  width="28"
+                  height="28"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLineJoin="round"
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="ml-2"
+                >
+                  <path d="M5 13l4 4L19 7" />
+                </svg>
+              )}
             </PrimaryButton>
             <span className="inline-block pl-4"></span>
           </Form>
