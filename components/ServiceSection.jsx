@@ -23,6 +23,7 @@ export default function ServiceSection({ title, description, img, className }) {
                 y: 0,
                 transition: { duration: 0.8 },
               }}
+              viewport={{ once: true }}
             >
               <SectionHeading className="w-full tablet:mb-8">
                 {title}
