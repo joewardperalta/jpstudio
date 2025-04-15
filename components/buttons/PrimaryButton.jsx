@@ -1,4 +1,5 @@
 "use client";
+import { motion } from "framer-motion";
 
 export default function PrimaryButton({
   children,
@@ -8,13 +9,15 @@ export default function PrimaryButton({
   ref,
 }) {
   return (
-    <button
+    <motion.button
+      whileHover={{ scale: 1.2 }}
+      whileTap={{ scale: 0.8 }}
       className={`primary-button ${className}`}
       type={type}
       onClick={onClick}
       ref={ref}
     >
       {children}
-    </button>
+    </motion.button>
   );
 }
