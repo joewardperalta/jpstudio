@@ -1,6 +1,6 @@
-export default function SectionHeading({ children, className}) {
+export default function SectionHeading({ children, className }) {
   return (
-    <h2 className={`section-heading ${className}`}>
+    <h2 viewport={{ once: true }} className={`section-heading ${className}`}>
       {children}
     </h2>
   );

@@ -39,7 +39,9 @@ export default function ServicePage({
               </SectionHeading>
 
               {/* Feature description */}
-              <p className="mb-[3.75rem]">{currentActiveFeature.description}</p>
+              <motion className="mb-[3.75rem]">
+                {currentActiveFeature.description}
+              </motion>
 
               {/* Left arrow button */}
               <div className="flex space-x-8">

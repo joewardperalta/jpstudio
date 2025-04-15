@@ -1,3 +1,5 @@
+"use client";
+
 import Image from "next/image";
 import Title from "@/components/Title";
 import Wrapper from "@/components/Wrapper";
@@ -11,6 +13,7 @@ import Link from "next/link";
 import QuestionAndAnswerCard from "@/components/QuestionAndAnswerCard";
 import CallToAction from "@/components/CallToAction";
 import ServiceSection from "@/components/ServiceSection";
+import { motion } from "framer-motion";
 
 // JSON Data
 import projects from "@/data/projects.json";
@@ -131,17 +134,36 @@ export default function Home() {
             <SectionHeading className="mb-8">
               Meet the team behind your success
             </SectionHeading>
-            <p className="mb-10">
+            <motion.p
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{
+                opacity: 1,
+                y: 0,
+                transition: { delay: 0.5, duration: 0.8 },
+              }}
+              viewport={{ once: true }}
+              className="mb-10"
+            >
               JPStudio creates modern, user-focused websites designed to drive
               business growth, enhance customer engagement, and boost
               conversions. With expertise in custom web design, SEO
               optimization, analytics integration, and e-commerce solutions, we
               deliver scalable, secure digital platforms tailored to your unique
               needs.
-            </p>
-            <Link href="/agency">
-              <SecondaryButton>Learn more</SecondaryButton>
-            </Link>
+            </motion.p>
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{
+                opacity: 1,
+                y: 0,
+                transition: { delay: 1, duration: 0.8 },
+              }}
+              viewport={{ once: true }}
+            >
+              <Link href="/agency">
+                <SecondaryButton>Learn more</SecondaryButton>
+              </Link>
+            </motion.div>
           </div>
 
           {/* A photo of the team */}
